@@ -7,8 +7,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
     "@supabase/ssr": "^0.8.0",
     "@supabase/supabase-js": "^2.89.0",
+    "@tailwindcss/postcss": "^4.1.18",
     "lucide-react": "^0.562.0",
     "next": "latest",
     "react": "^19.0.0",

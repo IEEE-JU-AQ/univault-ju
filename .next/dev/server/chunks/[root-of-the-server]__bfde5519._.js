@@ -112,7 +112,7 @@ async function updateSession(request) {
     // with the Supabase client, your users may be randomly logged out.
     const { data } = await supabase.auth.getClaims();
     const user = data?.claims;
-    if (request.nextUrl.pathname !== "/" && !user && !request.nextUrl.pathname.startsWith("/login") && !request.nextUrl.pathname.startsWith("/auth")) {
+    if (request.nextUrl.pathname !== "/" && !user && !request.nextUrl.pathname.startsWith("/login") && !request.nextUrl.pathname.startsWith("/auth") && !request.nextUrl.pathname.startsWith("/gpa-calculator")) {
         // no user, potentially respond by redirecting the user to the login page
         const url = request.nextUrl.clone();
         url.pathname = "/auth/login";

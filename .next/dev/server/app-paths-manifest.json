@@ -1,4 +1,5 @@
 {
   "/auth/login/page": "app/auth/login/page.js",
+  "/gpa-calculator/page": "app/gpa-calculator/page.js",
   "/page": "app/page.js"
 }
