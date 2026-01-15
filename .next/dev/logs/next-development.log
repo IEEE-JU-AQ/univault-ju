@@ -1,6 +1,174 @@
-[00:00:01.372] Server  LOG     ✓ Ready in 984ms
-[00:00:02.653] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:28.219] Server  LOG     ✓ Compiled in 509ms
-[00:02:42.461] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:46.776] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:50.082] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.666] Server  LOG     ✓ Ready in 2.1s
+[00:00:07.533] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:53.712] Server  LOG     ✓ Compiled in 611ms
+[00:04:49.555] Server  LOG     ✓ Compiled in 33ms
+[00:33:45.372] Server  LOG     ✓ Compiled in 80ms
+[00:34:41.669] Browser ERROR   {}
+[00:34:50.256] Browser ERROR   {}
+[00:34:51.588] Browser ERROR   {}
+[00:34:52.230] Browser ERROR   {}
+[00:34:52.599] Browser ERROR   {}
+[00:34:52.759] Browser ERROR   {}
+[00:34:52.919] Browser ERROR   {}
+[00:35:01.758] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:14.348] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:28.797] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:33.334] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:34.315] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:10.169] Server  LOG     ✓ Compiled in 20ms
+[00:37:26.605] Server  LOG     ✓ Compiled in 21ms
+[00:38:04.349] Server  LOG     ✓ Compiled in 51ms
+[00:38:04.891] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:42.484] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:56.656] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/NavBar'
+> 1 | import NavBar from "@/components/NavBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+Import map: aliased to relative './components/NavBar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:39:56.656] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/NavBar'
+> 1 | import NavBar from "@/components/NavBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+Import map: aliased to relative './components/NavBar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:39:56.657] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/NavBar'
+> 1 | import NavBar from "@/components/NavBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+Import map: aliased to relative './components/NavBar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:39:56.658] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/NavBar'
+> 1 | import NavBar from "@/components/NavBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+Import map: aliased to relative './components/NavBar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:39:56.658] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/NavBar'
+> 1 | import NavBar from "@/components/NavBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+Import map: aliased to relative './components/NavBar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:39:56.659] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/NavBar'
+> 1 | import NavBar from "@/components/NavBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+Import map: aliased to relative './components/NavBar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:39:56.660] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/NavBar'
+> 1 | import NavBar from "@/components/NavBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+Import map: aliased to relative './components/NavBar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:39:56.661] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/NavBar'
+> 1 | import NavBar from "@/components/NavBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+Import map: aliased to relative './components/NavBar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:39:56.662] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/NavBar'
+> 1 | import NavBar from "@/components/NavBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+Import map: aliased to relative './components/NavBar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:39:56.663] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/NavBar'
+> 1 | import NavBar from "@/components/NavBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+Import map: aliased to relative './components/NavBar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:39:56.807] Browser ERROR   ./app/page.tsx:1:1
+Module not found: Can't resolve '@/components/NavBar'
+> 1 | import NavBar from "@/components/NavBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+Import map: aliased to relative './components/NavBar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:40:04.447] Server  LOG     ✓ Compiled in 63ms

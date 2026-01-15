@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -105,10 +107,3 @@
     text-decoration: underline;
   }
 }
-
-@tailwind utilities;
-
-
-
-
-
