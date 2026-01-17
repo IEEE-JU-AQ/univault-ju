@@ -299,3 +299,105 @@ Import map: aliased to relative './data/majors.json' inside of [project]/
 https://nextjs.org/docs/messages/module-not-found
 [01:23:34.475] Server  LOG     ✓ Compiled in 53ms
 [01:25:12.747] Server  LOG     ✓ Compiled in 19ms
+[01:30:04.228] Server  LOG     ✓ Compiled in 700ms
+[01:30:04.329] Browser ERROR   ./lib/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from "@supabase/ssr";
+> 2 | import { cookies } from "next/headers";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | /**
+  5 |  * Especially important if using Fluid compute: Don't put this client in a
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./lib/supabase/server.ts [Client Component Browser]
+    ./components/auth-components/auth-button.tsx [Client Component Browser]
+    ./components/ui/NavBar.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/supabase/server.ts [Client Component SSR]
+    ./components/auth-components/auth-button.tsx [Client Component SSR]
+    ./components/ui/NavBar.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:30:09.423] Browser ERROR   ./lib/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from "@supabase/ssr";
+> 2 | import { cookies } from "next/headers";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | /**
+  5 |  * Especially important if using Fluid compute: Don't put this client in a
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./lib/supabase/server.ts [Client Component Browser]
+    ./components/auth-components/auth-button.tsx [Client Component Browser]
+    ./components/ui/NavBar.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/supabase/server.ts [Client Component SSR]
+    ./components/auth-components/auth-button.tsx [Client Component SSR]
+    ./components/ui/NavBar.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:30:36.642] Browser ERROR   ./lib/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from "@supabase/ssr";
+> 2 | import { cookies } from "next/headers";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | /**
+  5 |  * Especially important if using Fluid compute: Don't put this client in a
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./lib/supabase/server.ts [Client Component Browser]
+    ./components/auth-components/auth-button.tsx [Client Component Browser]
+    ./components/ui/NavBar.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/supabase/server.ts [Client Component SSR]
+    ./components/auth-components/auth-button.tsx [Client Component SSR]
+    ./components/ui/NavBar.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:30:37.551] Browser ERROR   ./lib/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from "@supabase/ssr";
+> 2 | import { cookies } from "next/headers";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | /**
+  5 |  * Especially important if using Fluid compute: Don't put this client in a
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./lib/supabase/server.ts [Client Component Browser]
+    ./components/auth-components/auth-button.tsx [Client Component Browser]
+    ./components/ui/NavBar.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/supabase/server.ts [Client Component SSR]
+    ./components/auth-components/auth-button.tsx [Client Component SSR]
+    ./components/ui/NavBar.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:30:41.890] Server  LOG     ✓ Compiled in 183ms
