@@ -666,3 +666,6 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [08:16:11.407] Server  LOG     ✓ Compiled in 56ms
 [08:20:57.271] Server  LOG     ✓ Compiled in 26ms
 [08:20:58.654] Server  LOG     ✓ Compiled in 52ms
+[08:26:38.949] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:26:39.086] Browser WARN    Image with src "/test.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
