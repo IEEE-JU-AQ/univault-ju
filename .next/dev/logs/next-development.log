@@ -1,39 +1,91 @@
-[00:00:03.058] Server  LOG     ✓ Ready in 2.5s
-[00:00:08.526] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.648] Browser WARN    Image with src "/test1.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:02.890] Server  LOG     ✓ Ready in 2.3s
+[00:00:05.699] Server  ERROR   ⨯ ./components/ui/NavBar.tsx:11:102
+Parsing ecmascript source code failed
+   9 |             <div className="max-w flex justify-between items-center py-4 px-10">
+  10 |                 <Link href="/" className="no-underline">
+> 11 |                     <div className="flex gap-1"><img src="/UJ.svg /><h1 className="text-2xl font-bold">UniVault</h1></div>
+     |                                                                                                      ^^^^^^^^^^^^^^^^^^^^^
+  12 |                 </Link>
+  13 |                 <div className="flex gap-20 items-center">
+  14 |                     <Link className="rounded bg-gray-300 p-1.5 hover:bg-gray-200 no-underline" href="/gpa-calculator">
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./components/ui/NavBar.tsx
+    ./app/layout.tsx
+
+
+[00:00:08.192] Browser ERROR   uncaughtError: Error: ./components/ui/NavBar.tsx:11:102
+Parsing ecmascript source code failed
+   9 |             <div className="max-w flex justify-between items-center py-4 px-10">
+  10 |                 <Link href="/" className="no-underline">
+> 11 |                     <div className="flex gap-1"><img src="/UJ.svg /><h1 className="text-2xl font-bold">UniVault</h1></div>
+     |                                                                                                      ^^^^^^^^^^^^^^^^^^^^^
+  12 |                 </Link>
+  13 |                 <div className="flex gap-20 items-center">
+  14 |                     <Link className="rounded bg-gray-300 p-1.5 hover:bg-gray-200 no-underline" href="/gpa-calculator">
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./components/ui/NavBar.tsx
+    ./app/layout.tsx
+
+
+[00:00:08.522] Browser ERROR   ./components/ui/NavBar.tsx:11:102
+Parsing ecmascript source code failed
+   9 |             <div className="max-w flex justify-between items-center py-4 px-10">
+  10 |                 <Link href="/" className="no-underline">
+> 11 |                     <div className="flex gap-1"><img src="/UJ.svg /><h1 className="text-2xl font-bold">UniVault</h1></div>
+     |                                                                                                      ^^^^^^^^^^^^^^^^^^^^^
+  12 |                 </Link>
+  13 |                 <div className="flex gap-20 items-center">
+  14 |                     <Link className="rounded bg-gray-300 p-1.5 hover:bg-gray-200 no-underline" href="/gpa-calculator">
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./components/ui/NavBar.tsx
+    ./app/layout.tsx
+[00:00:08.522] Browser ERROR   ./components/ui/NavBar.tsx:11:102
+Parsing ecmascript source code failed
+   9 |             <div className="max-w flex justify-between items-center py-4 px-10">
+  10 |                 <Link href="/" className="no-underline">
+> 11 |                     <div className="flex gap-1"><img src="/UJ.svg /><h1 className="text-2xl font-bold">UniVault</h1></div>
+     |                                                                                                      ^^^^^^^^^^^^^^^^^^^^^
+  12 |                 </Link>
+  13 |                 <div className="flex gap-20 items-center">
+  14 |                     <Link className="rounded bg-gray-300 p-1.5 hover:bg-gray-200 no-underline" href="/gpa-calculator">
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./components/ui/NavBar.tsx
+    ./app/layout.tsx
+[00:00:08.652] Browser ERROR   ./components/ui/NavBar.tsx:11:102
+Parsing ecmascript source code failed
+   9 |             <div className="max-w flex justify-between items-center py-4 px-10">
+  10 |                 <Link href="/" className="no-underline">
+> 11 |                     <div className="flex gap-1"><img src="/UJ.svg /><h1 className="text-2xl font-bold">UniVault</h1></div>
+     |                                                                                                      ^^^^^^^^^^^^^^^^^^^^^
+  12 |                 </Link>
+  13 |                 <div className="flex gap-20 items-center">
+  14 |                     <Link className="rounded bg-gray-300 p-1.5 hover:bg-gray-200 no-underline" href="/gpa-calculator">
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./components/ui/NavBar.tsx
+    ./app/layout.tsx
+[00:01:28.926] Server  LOG     ✓ Compiled in 177ms
+[00:01:30.011] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:30.156] Browser WARN    Image with src "/test1.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:01:13.877] Server  LOG     ✓ Compiled in 675ms
-[00:01:31.650] Server  LOG     ✓ Compiled in 37ms
-[00:01:39.848] Server  LOG     ✓ Compiled in 27ms
-[00:01:44.768] Server  LOG     ✓ Compiled in 47ms
-[00:01:53.156] Server  LOG     ✓ Compiled in 26ms
-[00:02:18.336] Server  LOG     ✓ Compiled in 34ms
-[00:02:21.383] Server  LOG     ✓ Compiled in 56ms
-[00:02:47.596] Server  LOG     ✓ Compiled in 26ms
-[00:02:51.467] Server  LOG     ✓ Compiled in 21ms
-[00:02:59.147] Server  LOG     ✓ Compiled in 28ms
-[00:03:03.243] Server  LOG     ✓ Compiled in 41ms
-[00:03:07.076] Server  LOG     ✓ Compiled in 48ms
-[00:03:10.451] Server  LOG     ✓ Compiled in 41ms
-[00:03:16.402] Server  LOG     ✓ Compiled in 37ms
-[00:03:28.754] Server  LOG     ✓ Compiled in 25ms
-[00:04:03.197] Server  LOG     ✓ Compiled in 25ms
-[00:21:31.373] Server  LOG     ✓ Compiled in 354ms
-[00:22:29.534] Server  LOG     ✓ Compiled in 26ms
-[00:22:35.560] Server  LOG     ✓ Compiled in 22ms
-[00:22:56.900] Server  LOG     ✓ Compiled in 26ms
-[00:23:09.764] Server  LOG     ✓ Compiled in 26ms
-[00:23:42.900] Server  LOG     ✓ Compiled in 33ms
-[00:25:07.148] Server  LOG     ✓ Compiled in 43ms
-[00:25:27.564] Server  LOG     ✓ Compiled in 21ms
-[00:25:38.726] Server  LOG     ✓ Compiled in 107ms
-[00:25:42.719] Server  LOG     ✓ Compiled in 54ms
-[00:25:45.263] Server  LOG     ✓ Compiled in 54ms
-[00:25:53.925] Server  LOG     ✓ Compiled in 24ms
-[00:25:58.055] Server  LOG     ✓ Compiled in 23ms
-[00:26:00.499] Server  LOG     ✓ Compiled in 28ms
-[00:26:03.310] Server  LOG     ✓ Compiled in 39ms
-[00:26:12.429] Server  LOG     ✓ Compiled in 46ms
-[00:26:14.925] Server  LOG     ✓ Compiled in 25ms
-[00:26:34.058] Server  LOG     ✓ Compiled in 21ms
-[00:26:42.222] Server  LOG     ✓ Compiled in 29ms
+[00:02:37.411] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:46.353] Server  LOG     ✓ Compiled in 41ms

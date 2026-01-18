@@ -2,6 +2,11 @@
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
     *, :before, :after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
@@ -31,7 +36,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-red-500: #fb2c36;
     --color-red-600: #e40014;
-    --color-orange-200: #ffd7a8;
     --color-orange-600: #f05100;
     --color-green-100: #dcfce7;
     --color-green-200: #b9f8cf;
@@ -85,7 +89,6 @@
     :root, :host {
       --color-red-500: lab(55.4814% 75.0732 48.8528);
       --color-red-600: lab(48.4493% 77.4328 61.5452);
-      --color-orange-200: lab(88.4871% 9.94918 28.8378);
       --color-orange-600: lab(57.1026% 64.2584 89.8886);
       --color-green-100: lab(96.1861% -13.8464 6.52365);
       --color-green-200: lab(92.4222% -26.4702 12.9427);
@@ -587,24 +590,12 @@
     width: calc(var(--spacing) * 4);
   }
 
-  .w-50 {
-    width: calc(var(--spacing) * 50);
-  }
-
   .w-70 {
     width: calc(var(--spacing) * 70);
   }
 
-  .w-100 {
-    width: calc(var(--spacing) * 100);
-  }
-
   .w-200 {
     width: calc(var(--spacing) * 200);
-  }
-
-  .w-500 {
-    width: calc(var(--spacing) * 500);
   }
 
   .w-full {
@@ -629,6 +620,10 @@
 
   .shrink-0 {
     flex-shrink: 0;
+  }
+
+  .transform {
+    transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
   }
 
   .cursor-pointer {
@@ -683,16 +678,8 @@
     gap: calc(var(--spacing) * 4);
   }
 
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
-  }
-
   .gap-6 {
     gap: calc(var(--spacing) * 6);
-  }
-
-  .gap-7 {
-    gap: calc(var(--spacing) * 7);
   }
 
   .gap-10 {
@@ -771,16 +758,8 @@
     background-color: var(--color-gray-50);
   }
 
-  .bg-gray-200 {
-    background-color: var(--color-gray-200);
-  }
-
   .bg-gray-300 {
     background-color: var(--color-gray-300);
-  }
-
-  .bg-gray-500 {
-    background-color: var(--color-gray-500);
   }
 
   .bg-green-200 {
@@ -1050,12 +1029,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:text-orange-200:hover {
-      color: var(--color-orange-200);
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:underline:hover {
       text-decoration-line: underline;
     }
@@ -1135,6 +1108,31 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
+}
+
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false
 }
 
 @property --tw-space-y-reverse {
