@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export default function Page() {
   return (
     <div className="flex min-h-svh w-full flex-col items-center justify-center p-6 md:p-10">
@@ -31,9 +33,9 @@ export default function Page() {
             />
           </div>
             {/* Add more courses as needed */}
-            <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+            <Button type="submit" variant="default" size="md" className="w-full mt-4">
               Calculate GPA
-            </button>
+            </Button>
         </form>
       </div>
     </div>

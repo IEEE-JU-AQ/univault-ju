@@ -1,4 +1,8 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/auth/forgot-password/page": "app/auth/forgot-password/page.js",
   "/auth/login/page": "app/auth/login/page.js",
+  "/auth/sign-up/page": "app/auth/sign-up/page.js",
+  "/gpa-calculator/page": "app/gpa-calculator/page.js",
   "/page": "app/page.js"
 }
