@@ -31,7 +31,7 @@ function CourseCard() {
                     width: "500",
                     height: 200,
                     alt: "Course Image",
-                    src: "/test.jpg"
+                    src: "/test1.jpg"
                 }, void 0, false, {
                     fileName: "[project]/components/ui/CourseCard.tsx",
                     lineNumber: 8,

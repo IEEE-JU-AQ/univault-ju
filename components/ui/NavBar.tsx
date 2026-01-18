@@ -10,16 +10,16 @@ export default function NavBar() {
                 <Link href="/" className="no-underline">
                     <div className="flex gap-1"><Folder size={30} /><h1 className="text-2xl font-bold">UniVault</h1></div>
                 </Link>
-                <div>
-                    <Link href="/gpa-calculator">
+                <div className="flex gap-20 items-center">
+                    <Link className="rounded bg-gray-300 p-1.5 hover:bg-gray-200 no-underline" href="/gpa-calculator">
                         <ul>
-                            <li className="hover:text-orange-200 list-none">GPA Calculator</li>
+                            <li className="list-none">GPA Calculator</li>
                         </ul>
                     </Link>
+                    <Suspense>
+                        <AuthButton />
+                    </Suspense>
                 </div>
-                <Suspense>
-                    <AuthButton />
-                </Suspense>
             </div>
         </nav>
     );
