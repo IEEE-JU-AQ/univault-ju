@@ -8,7 +8,7 @@ export default function NavBar() {
         <nav className="w-full border-b border-b-foreground/10 sticky top-0 bg-white z-50">
             <div className="max-w flex justify-between items-center py-4 px-10">
                 <Link href="/" className="no-underline">
-                    <div className="flex gap-1"><Folder size={30} /><h1 className="text-2xl font-bold">UniVault</h1></div>
+                    <div className="flex gap-1"><img src="/UJ.svg /><h1 className="text-2xl font-bold">UniVault</h1></div>
                 </Link>
                 <div className="flex gap-20 items-center">
                     <Link className="rounded bg-gray-300 p-1.5 hover:bg-gray-200 no-underline" href="/gpa-calculator">
