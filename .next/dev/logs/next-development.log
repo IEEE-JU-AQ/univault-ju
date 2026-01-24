@@ -185,3 +185,27 @@ await isn't allowed in non-async function
 [00:44:25.294] Server  LOG     ✓ Compiled in 43ms
 [00:44:28.572] Server  LOG     ✓ Compiled in 18ms
 [00:44:34.675] Server  LOG     ✓ Compiled in 19ms
+[00:49:15.574] Server  LOG     ✓ Compiled in 110ms
+[00:49:53.637] Browser ERROR   ./app/components/CourseGrid.tsx:6:67
+Parsing ecmascript source code failed
+  4 |     return (
+  5 |         <>
+> 6 |         <h1 className="text-2xl font-bold mb-5 ml-11">{Courses || }</h1>
+    |                                                                   ^
+  7 |             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 p-6 md:p-10 md:pt-5">
+  8 |                 {courses.map(course => (
+  9 |                     <CourseCard key={course.id} course={course} />
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./app/components/CourseGrid.tsx
+    ./app/courses/page.tsx
+[00:50:25.028] Server  LOG     ✓ Compiled in 28ms
+[00:53:05.130] Server  LOG     ✓ Compiled in 48ms
+[00:54:28.803] Server  LOG     ✓ Compiled in 119ms
+[00:56:49.940] Server  LOG     ✓ Compiled in 42ms
+[00:58:07.117] Server  LOG     ✓ Compiled in 98ms
+[00:59:45.532] Server  LOG     ✓ Compiled in 51ms
+[01:00:51.696] Server  LOG     ✓ Compiled in 96ms

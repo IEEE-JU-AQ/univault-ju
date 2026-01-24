@@ -8,6 +8,12 @@
     ],
     "[project]/app/courses/page": [
       "static/media/caa3a2e1cccd8315-s.p.853070df.woff2"
+    ],
+    "[project]/app/gpa-calculator/page": [
+      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2"
     ]
   },
   "appUsingSizeAdjust": true,

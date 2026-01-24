@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -13,9 +12,9 @@ export default function NavBar() {
                     </div>
                 </Link>
                 <div className="flex gap-20 items-center">
-                    <Link className="rounded" href="/gpa-calculator">
+                    <Link href="/gpa-calculator">
                         <ul>
-                            <li className="list-none">GPA Calculator</li>
+                            <li className="list-none border-b-3 border-indigo-400 pb-1">GPA Calculator</li>
                         </ul>
                     </Link>
                 </div>

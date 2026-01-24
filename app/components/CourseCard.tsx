@@ -1,6 +1,6 @@
-import type { course } from "@/app/types";
+import type { Course } from "@/app/types";
 
-export default function CourseCard({ course }: { course: course }) {
+export default function CourseCard({ course }: { course: Course }) {
   return (
     <div className="border border-border rounded-xl p-4 bg-card text-card-foreground shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex flex-col justify-between h-full">
       <div>
@@ -26,7 +26,7 @@ export default function CourseCard({ course }: { course: course }) {
       </div>
 
       {/* Action Button - Uses your refined Secondary color */}
-      <button className="w-full mt-6 py-2.5 px-4 rounded-lg bg-secondary text-secondary-foreground font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-200 flex items-center justify-center gap-2">
+      <button className="w-full mt-6 py-2.5 px-4 rounded-l font-semibold transition-all duration-200 flex items-center justify-center gap-2 opacity-70">
         View Resources
         <span className="text-lg">→</span>
       </button>

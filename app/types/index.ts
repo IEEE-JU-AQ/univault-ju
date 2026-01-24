@@ -1,4 +1,4 @@
-export type course = {
+export type Course = {
   id: string;
   name: string;
   description: string;
@@ -8,7 +8,7 @@ export type course = {
 export type Major = {
   id: string;
   name: string;
-  courses: course[];
+  courses: Course[];
 };
 
 export type Faculty = {
@@ -16,3 +16,8 @@ export type Faculty = {
   faculty_name: string;
   majors: Major[];
 };
+
+export type CourseGridProps = {
+    courses: Course[];
+    majorName?: string;
+}
