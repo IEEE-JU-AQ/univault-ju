@@ -2,47 +2,40 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
+    --background: #F1F5F9;
+    --foreground: #0F172A;
+    --card: #FFFFFF;
+    --card-foreground: #0F172A;
+    --primary: #4F46E5;
+    --primary-foreground: #FFFFFF;
+    --secondary: #E0E7FF;
+    --secondary-foreground: #4338CA;
+    --muted: #F8FAFC;
+    --muted-foreground: #64748B;
+    --accent: #F59E0B;
+    --accent-foreground: #FFFFFF;
+    --border: #E2E8F0;
+    --input: #E2E8F0;
+    --ring: #4F46E5;
     --radius: 0.5rem;
   }
+
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
+    --background: #0F172A;
+    --foreground: #F1F5F9;
+    --card: #1E293B;
+    --card-foreground: #F1F5F9;
+    --primary: #6366F1;
+    --primary-foreground: #FFFFFF;
+    --secondary: #1E1B4B;
+    --secondary-foreground: #C7D2FE;
+    --muted: #1E293B;
+    --muted-foreground: #94A3B8;
+    --accent: #F59E0B;
+    --accent-foreground: #0F172A;
+    --border: #334155;
+    --input: #334155;
+    --ring: #6366F1;
   }
 }
 
@@ -51,12 +44,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border-color: hsl(var(--border));
+    border-color: var(--border);
   }
-  
+
   body {
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    background-color: var(--background);
+    color: var(--foreground);
     font-family: inherit;
     line-height: 1.5;
   }
@@ -65,45 +58,51 @@
 @layer components {
   button {
     padding: 8px 16px;
-    border-radius: 4px;
+    border-radius: var(--radius);
     cursor: pointer;
-    background-color: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
+    background-color: var(--primary);
+    color: var(--primary-foreground);
     font-weight: 500;
-    border: 1px solid hsl(var(--border));
-    transition: opacity 0.2s;
+    border: 1px solid var(--border);
+    transition: opacity 0.2s ease-in-out;
   }
-  
+
   button:hover {
     opacity: 0.9;
   }
-  
-  input, textarea {
+
+  input,
+  textarea {
     padding: 8px;
-    border: 1px solid hsl(var(--input));
-    border-radius: 4px;
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    border-radius: var(--radius);
+    background-color: var(--card);
+    border: 1px solid var(--input);
+    color: var(--foreground);
     font-family: inherit;
   }
-  
-  input:focus, textarea:focus {
+
+  input:focus,
+  textarea:focus {
     outline: none;
-    border-color: hsl(var(--ring));
-    box-shadow: 0 0 0 2px hsla(var(--ring), 0.1);
+    border-color: var(--ring);
+    box-shadow: 0 0 0 2px var(--border);
   }
-  
+
   label {
-    color: hsl(var(--foreground));
+    color: var(--foreground);
     font-weight: 500;
+    margin-bottom: 4px;
+    display: inline-block;
   }
-  
+
   a {
-    color: hsl(var(--primary));
+    color: inherit;
     text-decoration: none;
+    transition: color 0.2s;
   }
-  
+
   a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    opacity: 0.6;
   }
 }

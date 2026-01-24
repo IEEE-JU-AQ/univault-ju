@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 interface Course {
@@ -172,24 +171,18 @@ export default function Page() {
           ))}
 
           <div className="flex gap-2">
-            <Button
-              type="button"
-              variant=""
-              size="md"
+            <button
               className="flex-1"
               onClick={addCourse}
             >
               + Add Course
-            </Button>
-            <Button
-              type="button"
-              variant="default"
-              size="md"
+            </button>
+            <button
               className="flex-1"
               onClick={calculateGPA}
             >
               Calculate GPA
-            </Button>
+            </button>
           </div>
 
           {gpa !== null && (
@@ -201,15 +194,12 @@ export default function Page() {
                   Based on {courses.filter((c) => c.grade && c.credits > 0).length} course(s)
                 </p>
               </div>
-              <Button
-                type="button"
-                variant=""
-                size="md"
+              <button
                 className="w-full mt-4"
                 onClick={resetCalculator}
               >
                 Reset Calculator
-              </Button>
+              </button>
             </div>
           )}
         </form>

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///home/xfxdedpanda/projects/univault/proxy.ts"],"sourcesContent":["import { updateSession } from \"@/lib/supabase/proxy\";\nimport { type NextRequest } from \"next/server\";\n\nexport async function proxy(request: NextRequest) {\n  return await updateSession(request);\n}\n\nexport const config = {\n  matcher: [\n    /*\n     * Match all request paths except:\n     * - _next/static (static files)\n     * - _next/image (image optimization files)\n     * - favicon.ico (favicon file)\n     * - images - .svg, .png, .jpg, .jpeg, .gif, .webp\n     * Feel free to modify this pattern to include more paths.\n     */\n    \"/((?!_next/static|_next/image|favicon.ico|.*\\\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)\",\n  ],\n};\n"],"names":[],"mappings":";;;;;;;;;;;;AAGO,eAAe,MAAM,OAAoB;IAC9C,OAAO,MAAM,cAAc;AAC7B;AAEO,MAAM,SAAS;IACpB,SAAS;QACP;;;;;;;KAOC,GACD;KACD;AACH"}}]
+}

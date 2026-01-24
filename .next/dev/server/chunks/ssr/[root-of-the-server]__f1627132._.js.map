@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///home/xfxdedpanda/projects/univault/app/page.tsx"],"sourcesContent":["import NavBar from \"@/components/NavBar\";\n\nexport default function Home() {\n  return (\n    <main className=\"min-h-screen flex flex-col\">\n      <NavBar />\n      <div className=\"flex-1 flex items-center justify-center\">\n        <p className=\"text-foreground/60\">Welcome to UniVault</p>\n      </div>\n    </main>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAK,WAAU;;0BACd,8OAAC;;;;;0BACD,8OAAC;gBAAI,WAAU;0BACb,cAAA,8OAAC;oBAAE,WAAU;8BAAqB;;;;;;;;;;;;;;;;;AAI1C"}}]
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///home/xfxdedpanda/projects/univault/app/page.tsx"],"sourcesContent":["import { redirect } from \"next/navigation\";\n\nexport default function Home() {\n  redirect(\"/courses\");\n}\n"],"names":[],"mappings":";;;;AAAA;AAAA;;AAEe,SAAS;IACtB,IAAA,iMAAQ,EAAC;AACX"}}]
 }
