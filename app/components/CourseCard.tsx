@@ -1,14 +1,35 @@
-import Image from "next/image"
+import type { course } from "@/app/types";
 
-export default function CourseCard({ course }: { course: any }) {
-    return (
-        <div>
-            <div className="border rounded-lg p-3 shadow-sm hover:shadow-md transition-shadow bg-white">
-                    <h2 className="text-xl font-semibold mb-3 mt-3">{course.name}</h2>
-                    <button className="w-full py-2 px-4 rounded transition-colors duration-200">
-                        View Course
-                    </button>
-            </div>
+export default function CourseCard({ course }: { course: course }) {
+  return (
+    <div className="border border-border rounded-xl p-4 bg-card text-card-foreground shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex flex-col justify-between h-full">
+      <div>
+        {/* Course Header: Category Badge */}
+        <div className="flex justify-between items-start">
+          <span className="text-[10px] uppercase tracking-wider font-bold text-accent bg-accent/10 px-2.5 py-1 rounded-md">
+            {course.code || "CIS-101"}
+          </span>
+          <span className="text-muted-foreground hover:text-primary transition-colors cursor-help">
+            <span className="text-xs">📄 12 Files</span>
+          </span>
         </div>
-    );
+
+        {/* Course Title */}
+        <h2 className="text-xl font-bold mt-4 mb-2 group-hover:text-primary transition-colors leading-tight">
+          {course.name}
+        </h2>
+        
+        {/* Description */}
+        <p className="text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+          {course.description || "Access past papers, lecture slides, and midterms for this course."}
+        </p>
+      </div>
+
+      {/* Action Button - Uses your refined Secondary color */}
+      <button className="w-full mt-6 py-2.5 px-4 rounded-lg bg-secondary text-secondary-foreground font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-200 flex items-center justify-center gap-2">
+        View Resources
+        <span className="text-lg">→</span>
+      </button>
+    </div>
+  );
 }
