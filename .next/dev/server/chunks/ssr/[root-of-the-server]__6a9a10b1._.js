@@ -156,7 +156,9 @@ __turbopack_context__.v([{"id":"AQ_IT","faculty_name":"Information Technology an
 
 __turbopack_context__.s([
     "getCourses",
-    ()=>getCourses
+    ()=>getCourses,
+    "getMajorfromId",
+    ()=>getMajorfromId
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$faculties$2e$json__$28$json$29$__ = __turbopack_context__.i("[project]/app/data/faculties.json (json)");
 ;
@@ -170,6 +172,16 @@ function getCourses(majorId) {
             c.id,
             c
         ])).values());
+}
+function getMajorfromId(majorId) {
+    for (const faculty of __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$faculties$2e$json__$28$json$29$__["default"]){
+        for (const major of faculty.majors){
+            if (major.id == majorId) {
+                return major;
+            }
+        }
+    }
+    return null;
 }
 }),
 "[project]/app/courses/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {

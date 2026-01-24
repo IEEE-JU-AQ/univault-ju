@@ -1,211 +1,45 @@
-[00:00:02.363] Server  LOG     ✓ Ready in 1729ms
-[00:00:06.680] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.476] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:08.115] Server  LOG     ✓ Compiled in 662ms
-[00:01:13.916] Server  LOG     ✓ Compiled in 51ms
-[00:02:25.030] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:25.154] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:58.619] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:58.745] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:05:00.250] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:00.373] Browser WARN    Image with src "/UJ.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:05:00.373] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:05:25.205] Server  LOG     ✓ Compiled in 33ms
-[00:18:28.967] Browser ERROR   ./app/courses/page.tsx:14:7
+[00:00:01.633] Server  LOG     ✓ Ready in 1193ms
+[00:00:04.482] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.562] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:24.779] Server  LOG     ✓ Compiled in 663ms
+[00:01:24.882] Browser ERROR   ./lib/majors.ts:26:6
 Parsing ecmascript source code failed
-  12 |         <SearchBar className="w-full" />
-  13 |         <
-> 14 |       </div>
-     |       ^
-  15 |     </main>
-  16 |   );
-  17 | }
+  24 |             }
+  25 |         }
+> 26 |     }
+     |      ^
 
-Expression expected
-[00:18:28.967] Browser ERROR   ./app/courses/page.tsx:14:8
-Parsing ecmascript source code failed
-  12 |         <SearchBar className="w-full" />
-  13 |         <
-> 14 |       </div>
-     |        ^^^^^
-  15 |     </main>
-  16 |   );
-  17 | }
-
-Unterminated regexp literal
-[00:20:16.409] Browser ERROR   ./app/courses/[majorId]/page.tsx:5:10
-Parsing ecmascript source code failed
-  3 | export default function majorCoursesPage({ params }: { params: { majorId: string } }) {
-  4 |   const courses = getCourses(params.majorId);
-> 5 |   return (
-    |          ^
-> 6 |     
-    | ^^^^
-> 7 |   );
-    | ^^^^
-  8 | }
-  9 |
-
-Parenthesized expression cannot be empty
-[00:20:28.103] Browser ERROR   ./app/courses/[majorId]/page.tsx:6:10
-Parsing ecmascript source code failed
-   4 | export default function majorCoursesPage({ params }: { params: { majorId: string } }) {
-   5 |   const courses = getCourses(params.majorId);
->  6 |   return (
-     |          ^
->  7 |
-     | ^
->  8 |   );
-     | ^^^^
-   9 | }
-  10 |
-
-Parenthesized expression cannot be empty
-[00:20:53.992] Server  LOG     ✓ Compiled in 470ms
-[00:20:54.091] Browser ERROR   ./app/courses/[majorId]/page.tsx:6:10
-Parsing ecmascript source code failed
-   4 | export default function majorCoursesPage({ params }: { params: { majorId: string } }) {
-   5 |   const courses = getCourses(params.majorId);
->  6 |   return (
-     |          ^
->  7 |
-     | ^
->  8 |   );
-     | ^^^^
-   9 | }
-  10 |
-
-Parenthesized expression cannot be empty
-[00:21:21.960] Server  LOG     ✓ Compiled in 78ms
-[00:21:22.061] Browser ERROR   ./app/courses/[majorId]/page.tsx:6:10
-Parsing ecmascript source code failed
-   4 | export default function majorCoursesPage({ params }: { params: { majorId: string } }) {
-   5 |   const courses = getCourses(params.majorId);
->  6 |   return (
-     |          ^
->  7 |
-     | ^
->  8 |   );
-     | ^^^^
-   9 | }
-  10 |
-
-Parenthesized expression cannot be empty
-[00:21:22.399] Browser ERROR   ./app/courses/[majorId]/page.tsx:6:10
-Parsing ecmascript source code failed
-   4 | export default function majorCoursesPage({ params }: { params: { majorId: string } }) {
-   5 |   const courses = getCourses(params.majorId);
->  6 |   return (
-     |          ^
->  7 |
-     | ^
->  8 |   );
-     | ^^^^
-   9 | }
-  10 |
-
-Parenthesized expression cannot be empty
-[00:21:52.467] Server  LOG     ✓ Compiled in 28ms
-[00:21:52.568] Browser ERROR   ./app/courses/[majorId]/page.tsx:6:10
-Parsing ecmascript source code failed
-   4 | export default function majorCoursesPage({ params }: { params: { majorId: string } }) {
-   5 |   const courses = getCourses(params.majorId);
->  6 |   return (
-     |          ^
->  7 |
-     | ^
->  8 |   );
-     | ^^^^
-   9 | }
-  10 |
-
-Parenthesized expression cannot be empty
-[00:22:08.759] Server  LOG     ✓ Compiled in 21ms
-[00:22:10.248] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/courses. Falling back to browser navigation. {}
-[00:22:10.248] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/courses. Falling back to browser navigation. {}
-[00:22:10.859] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:22:11.002] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:22:12.288] Server  ERROR   Error: Route "/courses/[majorId]" used `params.majorId`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:22:15.634] Server  ERROR   Error: Route "/courses/[majorId]" used `params.majorId`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:24:00.778] Server  ERROR   Error: Route "/courses/[majorId]" used `params.majorId`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:24:13.806] Server  LOG     ✓ Compiled in 17ms
-[00:24:14.115] Server  ERROR   Error: Route "/courses/[majorId]" used `params.majorId`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:24:51.811] Browser ERROR   ./app/courses/[majorId]/page.tsx:5:21
-Parsing ecmascript source code failed
-  3 |
-  4 | export default await function majorCoursesPage({ params }: { params: { majorId: string } }) {
-> 5 |     const majorId = await params.majorId;
-    |                     ^^^^^
-  6 |     const courses = getCourses(majorId);
-  7 |     return (
-  8 |         <CourseGrid courses={courses} />
-
-await isn't allowed in non-async function
-[00:25:00.832] Server  ERROR   Error: Route "/courses/[majorId]" used `params.majorId`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:26:01.762] Server  ERROR   Error: Route "/courses/[majorId]": Runtime data such as `cookies()`, `headers()`, `params`, or `searchParams` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
-[00:26:02.291] Browser ERROR   {"environmentName":"Server","name":"Error"}
-[00:27:21.503] Server  LOG     ✓ Compiled in 383ms
-[00:27:22.814] Server  ERROR   ⨯ Error: The default export is not a React Component in "/courses/[majorId]/loading"
-[00:27:23.167] Server  ERROR   ⨯ Error: The default export is not a React Component in "/courses/[majorId]/loading"
-[00:27:24.212] Server  ERROR   ⨯ Error: The default export is not a React Component in "/courses/[majorId]/loading"
-[00:27:24.572] Server  ERROR   ⨯ Error: The default export is not a React Component in "/courses/[majorId]/loading"
-[00:27:26.777] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/courses/[majorId]/loading"
-[00:27:26.804] Server  LOG     ✓ Compiled in 89ms
-[00:27:27.592] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:27:28.386] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:27:39.566] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:27:39.693] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:31:50.461] Server  LOG     ✓ Compiled in 16ms
-[00:32:06.738] Server  LOG     ✓ Compiled in 21ms
-[00:39:00.743] Server  LOG     ✓ Compiled in 19ms
-[00:39:15.616] Server  LOG     ✓ Compiled in 46ms
-[00:39:20.765] Server  LOG     ✓ Compiled in 55ms
-[00:39:24.812] Server  LOG     ✓ Compiled in 36ms
-[00:39:30.878] Server  LOG     ✓ Compiled in 40ms
-[00:39:38.666] Server  LOG     ✓ Compiled in 24ms
-[00:39:41.718] Server  LOG     ✓ Compiled in 26ms
-[00:39:46.934] Server  LOG     ✓ Compiled in 35ms
-[00:39:49.091] Server  LOG     ✓ Compiled in 46ms
-[00:39:53.402] Server  LOG     ✓ Compiled in 35ms
-[00:40:01.649] Server  LOG     ✓ Compiled in 21ms
-[00:40:04.460] Server  LOG     ✓ Compiled in 20ms
-[00:40:09.588] Server  LOG     ✓ Compiled in 17ms
-[00:40:15.165] Server  LOG     ✓ Compiled in 33ms
-[00:40:29.750] Server  LOG     ✓ Compiled in 34ms
-[00:40:33.623] Server  LOG     ✓ Compiled in 40ms
-[00:40:38.021] Server  LOG     ✓ Compiled in 21ms
-[00:42:18.335] Server  LOG     ✓ Compiled in 30ms
-[00:43:59.274] Server  LOG     ✓ Compiled in 24ms
-[00:44:08.431] Server  LOG     ✓ Compiled in 36ms
-[00:44:15.089] Server  LOG     ✓ Compiled in 18ms
-[00:44:17.776] Server  LOG     ✓ Compiled in 34ms
-[00:44:20.074] Server  LOG     ✓ Compiled in 57ms
-[00:44:22.074] Server  LOG     ✓ Compiled in 52ms
-[00:44:25.294] Server  LOG     ✓ Compiled in 43ms
-[00:44:28.572] Server  LOG     ✓ Compiled in 18ms
-[00:44:34.675] Server  LOG     ✓ Compiled in 19ms
-[00:49:15.574] Server  LOG     ✓ Compiled in 110ms
-[00:49:53.637] Browser ERROR   ./app/components/CourseGrid.tsx:6:67
-Parsing ecmascript source code failed
-  4 |     return (
-  5 |         <>
-> 6 |         <h1 className="text-2xl font-bold mb-5 ml-11">{Courses || }</h1>
-    |                                                                   ^
-  7 |             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 p-6 md:p-10 md:pt-5">
-  8 |                 {courses.map(course => (
-  9 |                     <CourseCard key={course.id} course={course} />
-
-Expected '</', got '}'
+Expected '}', got '<eof>'
 
 Import trace:
   Server Component:
-    ./app/components/CourseGrid.tsx
-    ./app/courses/page.tsx
-[00:50:25.028] Server  LOG     ✓ Compiled in 28ms
-[00:53:05.130] Server  LOG     ✓ Compiled in 48ms
-[00:54:28.803] Server  LOG     ✓ Compiled in 119ms
-[00:56:49.940] Server  LOG     ✓ Compiled in 42ms
-[00:58:07.117] Server  LOG     ✓ Compiled in 98ms
-[00:59:45.532] Server  LOG     ✓ Compiled in 51ms
-[01:00:51.696] Server  LOG     ✓ Compiled in 96ms
+    ./lib/majors.ts
+    ./app/courses/[majorId]/page.tsx
+[00:01:58.498] Browser ERROR   ./app/courses/[majorId]/page.tsx:8:39
+Parsing ecmascript source code failed
+   6 |     const courses = getCourses(majorId);
+   7 |     return (
+>  8 |         <CourseGrid courses={courses, } />
+     |                                       ^
+   9 |     );
+  10 | }
+  11 |
+
+Expression expected
+[00:02:05.962] Browser ERROR   ./app/courses/[majorId]/page.tsx:9:39
+Parsing ecmascript source code failed
+   7 |     const major = getMajorfromId(majorId);
+   8 |     return (
+>  9 |         <CourseGrid courses={courses, } />
+     |                                       ^
+  10 |     );
+  11 | }
+  12 |
+
+Expression expected
+[00:02:12.216] Server  LOG     ✓ Compiled in 46ms
+[00:02:12.573] Server  ERROR   ⨯ TypeError: courses.map is not a function
+[00:02:12.907] Browser ERROR   uncaughtError: TypeError: courses.map is not a function
+[00:02:20.231] Server  LOG     ✓ Compiled in 57ms
+[00:02:21.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:21.268] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
