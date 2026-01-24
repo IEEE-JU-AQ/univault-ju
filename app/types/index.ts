@@ -1,6 +1,7 @@
 export type course = {
   id: string;
   name: string;
+  description: string;
   code: string;
 };
 

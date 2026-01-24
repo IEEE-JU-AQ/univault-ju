@@ -1,18 +1,17 @@
 import faculties from "@/app/data/faculties.json";
-import { Major } from "@/app/types";
 
-export function getMajors() {
-  const majors: Array<Major & { facultyId: string; facultyName: string }> = [];
+export function getCourses(majorId?: string) {
+    if (majorId) {
+        const major = faculties
+            .flatMap(f => f.majors)
+            .find(m => m.id === majorId);
+            
+        return major ? major.courses : [];
+    }
 
-  faculties.forEach((faculty) => {
-    faculty.majors.forEach((major) => {
-      majors.push({
-        ...major,
-        facultyId: faculty.id,
-        facultyName: faculty.faculty_name,
-      });
-    });
-  });
+    const allCourses = faculties.flatMap(f => 
+        f.majors.flatMap(m => m.courses)
+    );
 
-  return majors;
+    return Array.from(new Map(allCourses.map(c => [c.id, c])).values());
 }
