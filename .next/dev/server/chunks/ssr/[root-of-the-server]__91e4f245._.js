@@ -25,7 +25,9 @@ __turbopack_context__.v([{"id":"AQ_IT","faculty_name":"Information Technology an
 
 __turbopack_context__.s([
     "getCourses",
-    ()=>getCourses
+    ()=>getCourses,
+    "getMajorfromId",
+    ()=>getMajorfromId
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$faculties$2e$json__$28$json$29$__ = __turbopack_context__.i("[project]/app/data/faculties.json (json)");
 ;
@@ -39,6 +41,16 @@ function getCourses(majorId) {
             c.id,
             c
         ])).values());
+}
+function getMajorfromId(majorId) {
+    for (const faculty of __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$faculties$2e$json__$28$json$29$__["default"]){
+        for (const major of faculty.majors){
+            if (major.id == majorId) {
+                return major;
+            }
+        }
+    }
+    return null;
 }
 }),
 "[project]/app/components/CourseCard.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
@@ -192,11 +204,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$CourseG
 async function majorCoursesPage({ params }) {
     const { majorId } = await params;
     const courses = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$majors$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getCourses"])(majorId);
+    const major = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$majors$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getMajorfromId"])(majorId);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$CourseGrid$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-        courses: courses
+        courses: courses,
+        majorName: major?.name
     }, void 0, false, {
         fileName: "[project]/app/courses/[majorId]/page.tsx",
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 9
     }, this);
 }
