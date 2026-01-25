@@ -1,9 +1,21 @@
 {
   "app": {
+    "[project]/app/_not-found/page": [
+      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2"
+    ],
     "[project]/app/courses/[majorId]/page": [
       "static/media/caa3a2e1cccd8315-s.p.853070df.woff2"
     ],
+    "[project]/app/courses/course/[courseId]/page": [
+      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2"
+    ],
+    "[project]/app/courses/major/[majorId]/page": [
+      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2"
+    ],
     "[project]/app/courses/page": [
+      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2"
+    ],
+    "[project]/app/page": [
       "static/media/caa3a2e1cccd8315-s.p.853070df.woff2"
     ]
   },

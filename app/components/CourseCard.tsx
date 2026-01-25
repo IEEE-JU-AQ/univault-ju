@@ -1,8 +1,9 @@
 import type { Course } from "@/app/types";
+import Link from "next/link";
 
 export default function CourseCard({ course }: { course: Course }) {
   return (
-    <div className="border border-border rounded-xl p-4 bg-card text-card-foreground shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex flex-col justify-between h-full">
+    <div className="border border-border rounded-xl bg-white p-4 bg-card text-card-foreground shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex flex-col justify-between h-full">
       <div>
         {/* Course Header: Category Badge */}
         <div className="flex justify-between items-start">
@@ -27,7 +28,7 @@ export default function CourseCard({ course }: { course: Course }) {
 
       {/* Action Button - Uses your refined Secondary color */}
       <button className="w-full mt-6 py-2.5 px-4 rounded-l font-semibold transition-all duration-200 flex items-center justify-center gap-2 opacity-70">
-        View Resources
+        <Link className="w-full h-full" href={`./courses/course/${course.id}`}>View Resources</Link>
         <span className="text-lg">→</span>
       </button>
     </div>

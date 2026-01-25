@@ -5,8 +5,7 @@ export default function CoursesLayout({ children }: { children: React.ReactNode 
     return (
         <main className="flex min-h-screen ml-70">
             <MajorsSidebar />
-            <div className="flex flex-col flex-1 mt-5 ">
-                <SearchBar className="w-full" />
+            <div className="flex flex-col flex-1 mt-5">
                 {children}
             </div>
         </main>

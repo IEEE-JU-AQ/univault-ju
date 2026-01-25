@@ -27,7 +27,7 @@ export default function MajorsSidebar() {
       <button className="w-full opacity-70">
         <Link
           href="/courses"
-          className="flex items-center w-full px-3 py-2 rounded-lg text-white font-semibold hover:bg-muted transition-colors duration-200"
+          className="flex items-center w-full h-full px-3 py-2 rounded-lg text-white font-semibold hover:bg-muted transition-colors duration-200"
         >
           <span className="mr-2">📚</span> All Courses
         </Link>
@@ -53,7 +53,7 @@ export default function MajorsSidebar() {
               {faculty.majors.map((major) => (
                 <li key={major.id}>
                   <Link
-                    href={`/courses/${major.id}`}
+                    href={`/courses/major/${major.id}`}
                     className="block text-sm text-muted-foreground px-4 py-1.5 hover:text-primary hover:bg-muted rounded-r-lg transition-colors duration-150"
                   >
                     {major.name}

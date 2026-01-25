@@ -1,45 +1,49 @@
-[00:00:01.633] Server  LOG     ✓ Ready in 1193ms
-[00:00:04.482] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:04.562] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:24.779] Server  LOG     ✓ Compiled in 663ms
-[00:01:24.882] Browser ERROR   ./lib/majors.ts:26:6
-Parsing ecmascript source code failed
-  24 |             }
-  25 |         }
-> 26 |     }
-     |      ^
-
-Expected '}', got '<eof>'
-
-Import trace:
-  Server Component:
-    ./lib/majors.ts
-    ./app/courses/[majorId]/page.tsx
-[00:01:58.498] Browser ERROR   ./app/courses/[majorId]/page.tsx:8:39
-Parsing ecmascript source code failed
-   6 |     const courses = getCourses(majorId);
-   7 |     return (
->  8 |         <CourseGrid courses={courses, } />
-     |                                       ^
-   9 |     );
-  10 | }
-  11 |
-
-Expression expected
-[00:02:05.962] Browser ERROR   ./app/courses/[majorId]/page.tsx:9:39
-Parsing ecmascript source code failed
-   7 |     const major = getMajorfromId(majorId);
-   8 |     return (
->  9 |         <CourseGrid courses={courses, } />
-     |                                       ^
-  10 |     );
-  11 | }
-  12 |
-
-Expression expected
-[00:02:12.216] Server  LOG     ✓ Compiled in 46ms
-[00:02:12.573] Server  ERROR   ⨯ TypeError: courses.map is not a function
-[00:02:12.907] Browser ERROR   uncaughtError: TypeError: courses.map is not a function
-[00:02:20.231] Server  LOG     ✓ Compiled in 57ms
-[00:02:21.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:21.268] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:01.488] Server  LOG     ✓ Ready in 1047ms
+[00:00:05.295] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.403] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:12.943] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:13.052] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:04.250] Server  LOG     ✓ Compiled in 242ms
+[00:01:28.983] Server  ERROR   ⨯ ReferenceError: SearchBar is not defined
+[00:01:29.211] Server  ERROR   ⨯ ReferenceError: SearchBar is not defined
+[00:01:29.537] Browser ERROR   uncaughtError: ReferenceError: SearchBar is not defined
+[00:01:34.225] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:34.334] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:12.747] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:12.898] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:41.067] Server  WARN    Route /_not-found is rendering with server caches disabled. For this navigation, Component Metadata in React DevTools will not accurately reflect what is statically prerenderable and runtime prefetchable. See more info here: https://nextjs.org/docs/messages/cache-bypass-in-dev
+[00:02:41.399] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:42.365] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:09:49.508] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
+Open your browser's console to view the Component stack trace.
+[00:09:55.255] Server  ERROR   ⨯ Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
+[00:09:55.778] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:55.958] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:09:55.958] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
+Open your browser's console to view the Component stack trace.
+[00:10:01.504] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:01.627] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:21.008] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:21.121] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:11:24.383] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:24.501] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:26.135] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:26.256] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:26.990] Server  LOG     ✓ Compiled in 49ms
+[00:14:29.522] Server  ERROR   Error: Route "/courses/course/[courseId]": Runtime data such as `cookies()`, `headers()`, `params`, or `searchParams` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:14:29.853] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:29.975] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:14:29.975] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:41.726] Server  LOG     ✓ Compiled in 19ms
+[00:14:55.718] Server  LOG     ✓ Compiled in 21ms
+[00:15:36.663] Server  LOG     ✓ Compiled in 33ms
+[00:15:36.954] Server  ERROR   Error: Route "/courses/course/[courseId]": Runtime data such as `cookies()`, `headers()`, `params`, or `searchParams` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:15:37.090] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:15:37.154] Server  ERROR   Error: Route "/courses/course/[courseId]": Runtime data such as `cookies()`, `headers()`, `params`, or `searchParams` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:15:37.257] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:15:46.085] Server  ERROR   Error: Route "/courses/course/[courseId]": Runtime data such as `cookies()`, `headers()`, `params`, or `searchParams` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:15:46.395] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:46.514] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:15:46.514] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:50.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:50.455] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
