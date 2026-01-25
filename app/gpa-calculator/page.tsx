@@ -1,13 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-interface Course {
-  id: string;
-  name: string;
-  grade: string;
-  credits: number;
-}
+import type { CompletedCourse } from "@/app/types";
 
 const GRADE_SCALE: Record<string, number> = {
   "A": 4.0,
@@ -24,12 +18,12 @@ const GRADE_SCALE: Record<string, number> = {
 };
 
 export default function Page() {
-  const [courses, setCourses] = useState<Course[]>([
+  const [courses, setCourses] = useState<CompletedCourse[]>([
     { id: "1", name: "", grade: "A", credits: 3 },
   ]);
   const [gpa, setGpa] = useState<number | null>(null);
 
-  const handleCourseChange = (id: string, field: keyof Course, value: string | number) => {
+  const handleCourseChange = (id: string, field: keyof CompletedCourse, value: string | number) => {
     setCourses(
       courses.map((course) =>
         course.id === id ? { ...course, [field]: value } : course
@@ -81,7 +75,7 @@ export default function Page() {
   };
 
   return (
-    <div className="flex min-h-svh w-full flex-col items-center justify-center p-6 md:p-10 gap-10">
+    <div className="flex min-h-svh w-full flex-col items-center p-6 md:p-10 gap-10">
       <h1 className="mb-4 text-3xl font-bold">GPA Calculator</h1>
       <p className="mb-8 text-center text-lg">
         Calculate your GPA using the University of Jordan grading scale.

@@ -4,5 +4,6 @@
   "/courses/course/[courseId]/page": "app/courses/course/[courseId]/page.js",
   "/courses/major/[majorId]/page": "app/courses/major/[majorId]/page.js",
   "/courses/page": "app/courses/page.js",
+  "/gpa-calculator/page": "app/gpa-calculator/page.js",
   "/page": "app/page.js"
 }

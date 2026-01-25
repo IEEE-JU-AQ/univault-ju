@@ -21,3 +21,10 @@ export type CourseGridProps = {
     courses: Course[];
     majorName?: string;
 }
+
+export type CompletedCourse = {
+  id: string;
+  name: string;
+  grade: string;
+  credits: number;
+};
