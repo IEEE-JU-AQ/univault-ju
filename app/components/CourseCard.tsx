@@ -28,7 +28,7 @@ export default function CourseCard({ course }: { course: Course }) {
 
       {/* Action Button - Uses your refined Secondary color */}
       <button className="w-full mt-6 py-2.5 px-4 rounded-l font-semibold transition-all duration-200 flex items-center justify-center gap-2 opacity-70">
-        <Link className="w-full h-full" href={`./courses/course/${course.id}`}>View Resources</Link>
+        <Link className="w-full h-full" href={`/courses/course/${course.id}`}>View Resources</Link>
         <span className="text-lg">→</span>
       </button>
     </div>
