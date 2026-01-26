@@ -80,11 +80,11 @@ export default function Page() {
       <p className="mb-8 text-center text-lg">
         Calculate your GPA using the University of Jordan grading scale.
       </p>
-      <div className="mb-6 w-200">
+      <div className="mb-6">
         <h2 className="text-lg font-semibold mb-3">Grading Scale</h2>
-        <div className="grid grid-cols-3 gap-2 text-sm bg-gray-50 p-3 rounded">
+        <div className="grid grid-cols-3 gap-2 text-sm bg-gray-50 p-3 rounded w-70">
           {Object.entries(GRADE_SCALE).map(([grade, point]) => (
-            <div key={grade} className="flex justify-between">
+            <div key={grade} className="flex gap-1.5">
               <span>{grade}:</span>
               <span className="font-medium">{point.toFixed(2)}</span>
             </div>
@@ -100,7 +100,7 @@ export default function Page() {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div>
                   <label className="block mb-1 font-medium text-sm">
-                    Course Name (Optional)
+                    Course Name
                   </label>
                   <input
                     type="text"
@@ -114,7 +114,7 @@ export default function Page() {
                 </div>
                 <div>
                   <label className="block mb-1 font-medium text-sm">
-                    Grade
+                    Grade <span className="text-red-600">*</span>
                   </label>
                   <select
                     className="w-full border rounded px-3 py-2 text-sm"
@@ -132,7 +132,7 @@ export default function Page() {
                 </div>
                 <div>
                   <label className="block mb-1 font-medium text-sm">
-                    Credits
+                    Credits <span className="text-red-600">*</span>
                   </label>
                   <input
                     type="number"
@@ -150,7 +150,7 @@ export default function Page() {
                     }
                   />
                 </div>
-                <div className="flex items-end">
+                <div className="flex items-center">
                   <button
                     type="button"
                     className="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded text-sm"

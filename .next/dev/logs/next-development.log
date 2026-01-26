@@ -70,3 +70,51 @@ Open your browser's console to view the Component stack trace.
 [00:22:47.372] Server  LOG     ✓ Compiled in 21ms
 [00:22:50.285] Server  LOG     ✓ Compiled in 23ms
 [00:23:08.797] Server  LOG     ✓ Compiled in 18ms
+[03:51:17.973] Server  LOG     ✓ Compiled in 23ms
+[03:51:21.189] Server  LOG     ✓ Compiled in 27ms
+[03:51:30.794] Server  LOG     ✓ Compiled in 24ms
+[03:52:40.731] Server  LOG     ✓ Compiled in 22ms
+[03:52:56.929] Server  LOG     ✓ Compiled in 19ms
+[03:53:19.952] Server  LOG     ✓ Compiled in 25ms
+[03:53:26.475] Server  LOG     ✓ Compiled in 25ms
+[03:53:31.848] Server  LOG     ✓ Compiled in 19ms
+[03:53:35.955] Server  LOG     ✓ Compiled in 43ms
+[03:53:39.042] Server  LOG     ✓ Compiled in 40ms
+[03:53:42.510] Server  LOG     ✓ Compiled in 23ms
+[03:53:46.235] Server  LOG     ✓ Compiled in 107ms
+[03:53:49.337] Server  LOG     ✓ Compiled in 18ms
+[03:53:52.602] Server  LOG     ✓ Compiled in 35ms
+[03:54:05.110] Server  LOG     ✓ Compiled in 20ms
+[03:54:43.873] Server  LOG     ✓ Compiled in 43ms
+[03:54:52.834] Server  LOG     ✓ Compiled in 28ms
+[03:54:56.615] Server  LOG     ✓ Compiled in 17ms
+[03:55:11.361] Server  LOG     ✓ Compiled in 22ms
+[03:55:14.763] Server  LOG     ✓ Compiled in 40ms
+[03:55:17.676] Server  LOG     ✓ Compiled in 24ms
+[03:55:21.962] Server  LOG     ✓ Compiled in 34ms
+[03:55:37.004] Server  LOG     ✓ Compiled in 24ms
+[03:55:40.664] Server  LOG     ✓ Compiled in 31ms
+[03:55:45.547] Server  LOG     ✓ Compiled in 32ms
+[03:55:49.597] Server  LOG     ✓ Compiled in 39ms
+[03:55:51.485] Server  LOG     ✓ Compiled in 15ms
+[03:56:22.931] Server  LOG     ✓ Compiled in 25ms
+[03:56:29.001] Server  LOG     ✓ Compiled in 40ms
+[03:56:49.484] Server  LOG     ✓ Compiled in 18ms
+[03:57:02.733] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:02.853] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:57:04.870] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:04.980] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:57:05.823] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:05.945] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:57:06.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:06.968] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:57:07.748] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:07.861] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:57:12.496] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:12.617] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:57:13.501] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:13.607] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:57:14.412] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:14.523] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:57:16.944] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:17.062] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

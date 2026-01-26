@@ -76,8 +76,10 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --color-red-100: #ffe2e2;
     --color-red-500: #fb2c36;
     --color-red-600: #e40014;
+    --color-red-900: #82181a;
     --color-blue-50: #eff6ff;
     --color-blue-200: #bedbff;
     --color-blue-500: #3080ff;
@@ -124,8 +126,10 @@
 
   @supports (color: lab(0% 0 0)) {
     :root, :host {
+      --color-red-100: lab(92.243% 10.2865 3.83865);
       --color-red-500: lab(55.4814% 75.0732 48.8528);
       --color-red-600: lab(48.4493% 77.4328 61.5452);
+      --color-red-900: lab(28.5139% 44.5539 29.0463);
       --color-blue-50: lab(96.492% -1.14644 -5.11479);
       --color-blue-200: lab(86.15% -4.04379 -21.0797);
       --color-blue-500: lab(54.1736% 13.3369 -74.6839);
@@ -639,6 +643,18 @@
     width: calc(var(--spacing) * 70);
   }
 
+  .w-75 {
+    width: calc(var(--spacing) * 75);
+  }
+
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
+
   .w-200 {
     width: calc(var(--spacing) * 200);
   }
@@ -713,6 +729,10 @@
 
   .gap-1 {
     gap: calc(var(--spacing) * 1);
+  }
+
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
   }
 
   .gap-2 {
@@ -998,6 +1018,22 @@
 
   .text-gray-600 {
     color: var(--color-gray-600);
+  }
+
+  .text-red-100 {
+    color: var(--color-red-100);
+  }
+
+  .text-red-500 {
+    color: var(--color-red-500);
+  }
+
+  .text-red-600 {
+    color: var(--color-red-600);
+  }
+
+  .text-red-900 {
+    color: var(--color-red-900);
   }
 
   .text-white {
