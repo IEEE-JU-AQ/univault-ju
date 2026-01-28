@@ -28,3 +28,15 @@ export type CompletedCourse = {
   grade: string;
   credits: number;
 };
+
+export type ResourceCardProps = {
+  name: string;
+  stars: number;
+  uploadDate: Date;
+  uploader: string;
+};
+
+export type Resource = ResourceCardProps & {
+  id: string;
+  category: "notes" | "exams" | "other";
+};

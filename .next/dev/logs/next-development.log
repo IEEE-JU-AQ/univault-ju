@@ -110,3 +110,340 @@
 [00:19:06.334] Server  LOG     ✓ Compiled in 46ms
 [00:19:12.053] Server  LOG     ✓ Compiled in 33ms
 [00:19:19.716] Server  LOG     ✓ Compiled in 21ms
+[00:25:16.103] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:25:16.206] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:25:47.357] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:25:47.461] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:25:52.180] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:25:52.284] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:26:15.020] Browser ERROR   ./app/courses/course/[courseId]/[category]/page.tsx:14:7
+Parsing ecmascript source code failed
+  12 |       <div className="grid gap-4 mt-6">
+  13 |         <ResourceCard
+> 14 |       </div>
+     |       ^
+  15 |     </div>
+  16 |   );
+  17 | }
+
+Expression expected
+[00:26:15.020] Browser ERROR   ./app/courses/course/[courseId]/[category]/page.tsx:14:8
+Parsing ecmascript source code failed
+  12 |       <div className="grid gap-4 mt-6">
+  13 |         <ResourceCard
+> 14 |       </div>
+     |        ^^^^^
+  15 |     </div>
+  16 |   );
+  17 | }
+
+Unterminated regexp literal
+[00:26:22.835] Browser ERROR   ./app/courses/course/[courseId]/[category]/page.tsx:13:7
+Parsing ecmascript source code failed
+  11 |       <div className="grid gap-4 mt-6">
+  12 |         <ResourceCard
+> 13 |       </div>
+     |       ^
+  14 |     </div>
+  15 |   );
+  16 | }
+
+Expression expected
+[00:26:22.835] Browser ERROR   ./app/courses/course/[courseId]/[category]/page.tsx:13:8
+Parsing ecmascript source code failed
+  11 |       <div className="grid gap-4 mt-6">
+  12 |         <ResourceCard
+> 13 |       </div>
+     |        ^^^^^
+  14 |     </div>
+  15 |   );
+  16 | }
+
+Unterminated regexp literal
+[00:26:27.026] Browser ERROR   ./app/courses/course/[courseId]/[category]/page.tsx:13:7
+Parsing ecmascript source code failed
+  11 |       <div className="grid gap-4 mt-6">
+  12 |         <ResourceCard
+> 13 |       </div>
+     |       ^
+  14 |     </div>
+  15 |   );
+  16 | }
+
+Expression expected
+[00:26:27.027] Browser ERROR   ./app/courses/course/[courseId]/[category]/page.tsx:13:8
+Parsing ecmascript source code failed
+  11 |       <div className="grid gap-4 mt-6">
+  12 |         <ResourceCard
+> 13 |       </div>
+     |        ^^^^^
+  14 |     </div>
+  15 |   );
+  16 | }
+
+Unterminated regexp literal
+[00:26:44.008] Browser ERROR   ./app/courses/course/[courseId]/[category]/page.tsx:16:1
+Parsing ecmascript source code failed
+  14 |     </div>
+  15 |   );
+> 16 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+[00:26:47.604] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:26:47.719] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:28:16.718] Server  LOG     ✓ Compiled in 25ms
+[00:28:17.222] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:28:17.326] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:28:20.774] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:28:20.879] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:28:38.645] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:28:38.748] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:28:57.731] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:28:57.844] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:29:13.544] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:29:13.649] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:29:16.891] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:29:16.993] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:29:22.858] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:29:22.964] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:29:30.901] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:29:31.003] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:29:33.693] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:29:33.814] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:29:54.470] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:29:54.580] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:30:03.169] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:30:03.276] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:30:05.320] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:30:05.423] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:30:24.004] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:30:24.111] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:30:27.334] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:30:27.435] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:30:39.203] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:30:39.305] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:30:43.193] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:30:43.303] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:30:50.905] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:30:51.010] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:30:54.788] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:30:54.905] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:30:57.938] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:30:58.041] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:31:00.514] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:31:00.619] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:31:17.645] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:31:17.747] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:31:27.604] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:31:27.708] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:31:43.467] Server  LOG     ✓ Compiled in 117ms
+[00:31:57.751] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:31:57.855] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:32:01.162] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:32:01.264] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:32:35.312] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:32:35.414] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:33:58.152] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:33:58.266] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:34:01.037] Server  LOG     ✓ Compiled in 39ms
+[00:34:01.610] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:34:01.712] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:34:07.154] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:34:07.261] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:34:17.168] Browser ERROR   ./app/components/ResourceCard.tsx:26:13
+Parsing ecmascript source code failed
+  24 |             </div>
+  25 |             <
+> 26 |             {/* Action Buttons */}
+     |             ^
+  27 |             <button className="w-50 mt-6 py-2.5 px-4 rounded-l font-semibold flex items-center justify-center">
+  28 |                 <Download className="mb-1" size={20} />
+  29 |             </button>
+
+Expected '</', got '{'
+
+Import trace:
+  Server Component:
+    ./app/components/ResourceCard.tsx
+    ./app/courses/course/[courseId]/[category]/page.tsx
+[00:34:26.105] Browser ERROR   ./app/components/ResourceCard.tsx:26:13
+Parsing ecmascript source code failed
+  24 |             </div>
+  25 |             <
+> 26 |             {/* Action Buttons */}
+     |             ^
+  27 |             <div className="flex gap-2 mt-4">
+  28 |                 <button className="w-50 mt-6 py-2.5 px-4 rounded-l font-semibold flex items-center justify-center">
+  29 |                     <Download className="mb-1" size={20} />
+
+Expected '</', got '{'
+
+Import trace:
+  Server Component:
+    ./app/components/ResourceCard.tsx
+    ./app/courses/course/[courseId]/[category]/page.tsx
+[00:34:29.076] Browser ERROR   ./app/components/ResourceCard.tsx:35:1
+Parsing ecmascript source code failed
+  33 |         </div>
+  34 |     );
+> 35 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./app/components/ResourceCard.tsx
+    ./app/courses/course/[courseId]/[category]/page.tsx
+[00:34:31.633] Browser ERROR   ./app/components/ResourceCard.tsx:36:1
+Parsing ecmascript source code failed
+  34 |         </div>
+  35 |     );
+> 36 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./app/components/ResourceCard.tsx
+    ./app/courses/course/[courseId]/[category]/page.tsx
+[00:34:37.537] Browser ERROR   ./app/components/ResourceCard.tsx:35:1
+Parsing ecmascript source code failed
+  33 |             </button>
+  34 |         </div>
+> 35 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./app/components/ResourceCard.tsx
+    ./app/courses/course/[courseId]/[category]/page.tsx
+[00:34:53.098] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:34:53.200] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:35:05.238] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:35:05.342] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:35:14.541] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:35:14.644] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:35:25.550] Server  LOG     ✓ Compiled in 22ms
+[00:35:25.990] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:35:26.092] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:35:31.609] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:35:31.712] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:35:36.810] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:35:36.912] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:35:53.685] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:35:53.794] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:35:59.637] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:35:59.748] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:36:07.043] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:36:07.145] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:36:09.426] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:36:09.529] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:36:33.778] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:36:33.882] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:37:13.414] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:37:13.525] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:38:32.231] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:38:32.334] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:38:38.917] Server  LOG     ✓ Compiled in 15ms
+[00:38:39.532] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:38:39.644] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:38:47.285] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:38:47.389] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:38:56.941] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:38:57.044] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:39:08.443] Server  LOG     ✓ Compiled in 28ms
+[00:39:09.063] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:39:09.173] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:39:25.476] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:39:25.581] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:39:37.708] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:39:37.811] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:39:43.293] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:39:43.409] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:39:46.251] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:39:46.356] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:39:49.550] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:39:49.655] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:39:56.146] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:39:56.248] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:39:59.908] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:40:00.012] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:40:01.059] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:40:01.172] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:40:08.457] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:40:08.562] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:40:11.792] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:40:11.895] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:40:19.124] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:40:19.229] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:40:40.334] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:40:40.436] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:40:42.780] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:40:42.883] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:40:53.333] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:41:16.819] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:41:16.946] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:41:23.270] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:41:23.372] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:41:28.639] Server  LOG     ✓ Compiled in 18ms
+[00:41:29.330] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:41:29.433] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:41:36.442] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:41:36.559] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:43:52.681] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:43:52.787] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:43:54.225] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:43:54.328] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:44:50.212] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:44:50.324] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:45:39.156] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleDateString')
+[00:45:39.158] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleDateString')
+[00:45:39.160] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleDateString')
+[00:45:39.162] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleDateString')
+[00:45:39.165] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleDateString')
+[00:45:39.168] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleDateString')
+[00:45:39.170] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleDateString')
+[00:45:39.172] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleDateString')
+[00:45:39.174] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleDateString')
+[00:45:39.413] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Runtime data such as `cookies()`, `headers()`, `params`, or `searchParams` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:45:39.583] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:45:39.583] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toLocaleDateString')
+[00:46:17.588] Server  LOG     ✓ Compiled in 21ms
+[00:46:18.351] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:46:18.690] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:18.813] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:46:18.813] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:47:09.309] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:47:09.413] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:49:13.778] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:49:13.881] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:49:18.770] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:49:18.875] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:49:23.720] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:49:23.823] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:49:25.334] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:49:25.438] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:49:28.283] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:49:28.411] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:52:40.377] Server  LOG     ✓ Compiled in 24ms
+[00:52:40.995] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:52:41.373] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:53:05.222] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:53:05.724] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:53:08.215] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Uncached data or `connection()` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:53:08.517] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:08.628] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:53:08.628] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:53:54.943] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Runtime data such as `cookies()`, `headers()`, `params`, or `searchParams` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:53:55.136] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:53:55.279] Server  ERROR   Error: Route "/courses/course/[courseId]/[category]": Runtime data such as `cookies()`, `headers()`, `params`, or `searchParams` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:53:55.382] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:55:02.530] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:02.647] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:38.923] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:39.043] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

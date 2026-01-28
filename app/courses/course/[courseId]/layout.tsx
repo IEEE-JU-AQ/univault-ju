@@ -1,5 +1,6 @@
 import BreadCrumbs from "@/app/components/BreadCrumbs";
 import { getCourseFromId } from "@/lib/majors";
+import { Suspense } from "react";
 
 export default async function CoursePageLayout({ params, children }: { params: Promise<{ courseId: string }>, children: React.ReactNode }) {
     const { courseId } = await params;

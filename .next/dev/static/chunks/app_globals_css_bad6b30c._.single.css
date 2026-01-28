@@ -32,6 +32,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-red-500: #fb2c36;
     --color-red-600: #e40014;
+    --color-yellow-400: #fac800;
     --color-blue-50: #eff6ff;
     --color-blue-200: #bedbff;
     --color-blue-500: #3080ff;
@@ -44,7 +45,6 @@
     --color-gray-300: #d1d5dc;
     --color-gray-500: #6a7282;
     --color-gray-600: #4a5565;
-    --color-gray-900: #101828;
     --color-white: #fff;
     --spacing: .25rem;
     --container-md: 28rem;
@@ -66,7 +66,6 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --tracking-tighter: -.05em;
     --tracking-wider: .05em;
     --leading-tight: 1.25;
     --leading-relaxed: 1.625;
@@ -84,6 +83,7 @@
     :root, :host {
       --color-red-500: lab(55.4814% 75.0732 48.8528);
       --color-red-600: lab(48.4493% 77.4328 61.5452);
+      --color-yellow-400: lab(83.2664% 8.65132 106.895);
       --color-blue-50: lab(96.492% -1.14644 -5.11479);
       --color-blue-200: lab(86.15% -4.04379 -21.0797);
       --color-blue-500: lab(54.1736% 13.3369 -74.6839);
@@ -96,7 +96,6 @@
       --color-gray-300: lab(85.1236% -.612259 -3.7138);
       --color-gray-500: lab(47.7841% -.393182 -10.0268);
       --color-gray-600: lab(35.6337% -1.58697 -10.8425);
-      --color-gray-900: lab(8.11897% .811279 -12.254);
     }
   }
 }
@@ -593,6 +592,10 @@
     width: calc(var(--spacing) * 0);
   }
 
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
+
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
@@ -623,6 +626,10 @@
 
   .cursor-help {
     cursor: help;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
   }
 
   .list-none {
@@ -894,10 +901,6 @@
     text-align: left;
   }
 
-  .font-\[\'Orbitron\'\] {
-    font-family: Orbitron;
-  }
-
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -962,11 +965,6 @@
     font-weight: var(--font-weight-semibold);
   }
 
-  .tracking-tighter {
-    --tw-tracking: var(--tracking-tighter);
-    letter-spacing: var(--tracking-tighter);
-  }
-
   .tracking-wider {
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
@@ -984,10 +982,6 @@
     color: var(--color-gray-600);
   }
 
-  .text-gray-900 {
-    color: var(--color-gray-900);
-  }
-
   .text-indigo-800 {
     color: var(--color-indigo-800);
   }
@@ -998,6 +992,10 @@
 
   .text-white {
     color: var(--color-white);
+  }
+
+  .text-yellow-400 {
+    color: var(--color-yellow-400);
   }
 
   .capitalize {
