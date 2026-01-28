@@ -337,3 +337,9 @@ Import trace:
 [00:52:23.204] Browser ERROR   {"environmentName":"Server","name":"Error"}
 [00:52:46.064] Server  ERROR   Error: Route "/courses/course/[courseId]": Runtime data such as `cookies()`, `headers()`, `params`, or `searchParams` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
 [00:52:46.193] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:58:58.879] Server  ERROR   Error: Route "/courses/course/[courseId]": Runtime data such as `cookies()`, `headers()`, `params`, or `searchParams` was accessed outside of `<Suspense>`. This delays the entire page from rendering, resulting in a slow user experience. Learn more: https://nextjs.org/docs/messages/blocking-route
+[00:58:59.302] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:58:59.426] Browser ERROR   {"environmentName":"Server","name":"Error"}
+[00:58:59.426] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:01.144] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:01.265] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
