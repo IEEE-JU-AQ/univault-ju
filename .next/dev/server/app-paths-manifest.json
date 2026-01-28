@@ -1,7 +1,0 @@
-{
-  "/courses/course/[courseId]/[category]/page": "app/courses/course/[courseId]/[category]/page.js",
-  "/courses/course/[courseId]/page": "app/courses/course/[courseId]/page.js",
-  "/courses/major/[majorId]/page": "app/courses/major/[majorId]/page.js",
-  "/courses/page": "app/courses/page.js",
-  "/page": "app/page.js"
-}
