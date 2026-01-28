@@ -24,7 +24,7 @@ export default function MajorsSidebar() {
       <h2 className="text-xl font-bold mb-6">Faculties & Majors</h2>
 
       {/* All Courses Link */}
-      <button className="w-full opacity-70">
+      <button className="w-full">
         <Link
           href="/courses"
           className="flex items-center w-full h-full px-3 py-2 rounded-lg text-white font-semibold hover:bg-muted transition-colors duration-200"
@@ -40,7 +40,7 @@ export default function MajorsSidebar() {
         <div key={faculty.id} className="mb-4">
           <button
             onClick={() => toggleFaculty(faculty.id)}
-            className="flex items-center w-full px-3 py-2 rounded-lg font-semibold text-left hover:bg-muted transition-colors duration-200 opacity-70"
+            className="flex items-center w-full px-3 py-2 rounded-lg font-semibold text-left hover:bg-muted transition-colors duration-200"
           >
             <span className="mr-2 text-xs text-accent">
               {expandedFaculties.has(faculty.id) ? "▼" : "▶"}

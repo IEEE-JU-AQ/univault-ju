@@ -85,7 +85,7 @@ function CourseCard({ course }) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                className: "w-full mt-6 py-2.5 px-4 rounded-l font-semibold transition-all duration-200 flex items-center justify-center gap-2 opacity-70",
+                className: "w-full mt-6 py-2.5 px-4 rounded-l font-semibold transition-all duration-200 flex items-center justify-center gap-2",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         className: "w-full h-full",
@@ -211,6 +211,8 @@ __turbopack_context__.v([{"id":"AQ_IT","faculty_name":"Information Technology an
 "use strict";
 
 __turbopack_context__.s([
+    "getCourseFromId",
+    ()=>getCourseFromId,
     "getCourses",
     ()=>getCourses,
     "getMajorfromId",
@@ -238,6 +240,17 @@ function getMajorfromId(majorId) {
         }
     }
     return null;
+}
+function getCourseFromId(courseId) {
+    for (const faculty of __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$faculties$2e$json__$28$json$29$__["default"]){
+        for (const major of faculty.majors){
+            for (const course of major.courses){
+                if (course.id == courseId) {
+                    return course;
+                }
+            }
+        }
+    }
 }
 }),
 "[project]/app/courses/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {

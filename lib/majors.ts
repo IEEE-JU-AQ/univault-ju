@@ -26,3 +26,15 @@ export function getMajorfromId(majorId: string) {
     }
     return null;
 }
+
+export function getCourseFromId(courseId: string) {
+    for (const faculty of faculties) {
+        for (const major of faculty.majors) {
+            for (const course of major.courses) {
+                if (course.id == courseId) {
+                    return course;
+                }
+            }
+        }
+    }
+}

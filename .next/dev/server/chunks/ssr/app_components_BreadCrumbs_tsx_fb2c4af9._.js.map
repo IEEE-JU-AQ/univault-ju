@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/xfxdedpanda/projects/univault/app/components/BreadCrumbs.tsx"],"sourcesContent":["\"use client\";\nimport Link from \"next/link\";\nimport type { BreadCrumbsProps } from \"@/app/types\";\n\nexport default function BreadCrumbs({ courseId, CourseName }: BreadCrumbsProps) {\n    return (\n<nav className=\"flex items-center gap-2 text-sm text-gray-500 mb-4\">\n      <Link href=\"/courses\" className=\"hover:text-primary transition-colors\">\n        Courses\n      </Link>\n      \n      <i className=\"fa-solid fa-chevron-right text-[10px] text-gray-500\"></i>\n      \n      {/* Dynamic Course ID with Orbitron for the 'Active' feel */}\n      <span className=\"tracking-tighter text-gray-500\">\n        {CourseName ? CourseName : `Course ${courseId}`}\n      </span>\n    </nav>\n    );\n}"],"names":[],"mappings":";;;;;AACA;AADA;;;AAIe,SAAS,YAAY,EAAE,QAAQ,EAAE,UAAU,EAAoB;IAC1E,qBACJ,8OAAC;QAAI,WAAU;;0BACT,8OAAC,uKAAI;gBAAC,MAAK;gBAAW,WAAU;0BAAuC;;;;;;0BAIvE,8OAAC;gBAAE,WAAU;;;;;;0BAGb,8OAAC;gBAAK,WAAU;0BACb,aAAa,aAAa,CAAC,OAAO,EAAE,UAAU;;;;;;;;;;;;AAIvD"}}]
+}
