@@ -12,6 +12,6 @@ export default async function CoursesPage({ searchParams }: { searchParams?: Pro
     )
     : courses;
   return (
-    <CourseGrid courses={filteredCourses} />
+    <CourseGrid courses={filteredCourses} searchDefaultValue={searchQuery} />
   );
 }

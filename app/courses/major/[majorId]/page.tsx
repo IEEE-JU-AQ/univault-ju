@@ -16,6 +16,6 @@ export default async function majorCoursesPage({ params, searchParams }: MajorCo
         : courses;
 
     return (
-        <CourseGrid courses={filteredCourses} majorName={major?.name} />
+        <CourseGrid courses={filteredCourses} majorName={major?.name} searchDefaultValue={searchQuery} />
     );
 }

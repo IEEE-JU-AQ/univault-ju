@@ -38,3 +38,12 @@
 [00:07:34.038] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [00:07:41.196] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:07:41.310] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:09.658] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:09.771] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:40.157] Server  LOG     ✓ Compiled in 18ms
+[00:09:16.369] Server  LOG     ✓ Compiled in 19ms
+[00:09:28.869] Server  LOG     ✓ Compiled in 21ms
+[00:09:37.559] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:37.675] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:11.933] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:12.051] Browser WARN    Image with src "http://localhost:3000/UJ.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
