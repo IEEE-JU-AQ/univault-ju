@@ -42,7 +42,8 @@ function Page() {
                 [field]: value
             } : course));
     };
-    const addCourse = ()=>{
+    const addCourse = (e)=>{
+        e.preventDefault(); // Extra safety to prevent form issues
         const newId = Date.now().toString();
         setCourses([
             ...courses,
@@ -54,12 +55,14 @@ function Page() {
             }
         ]);
     };
-    const removeCourse = (id)=>{
+    const removeCourse = (id, e)=>{
+        e.preventDefault(); // Extra safety to prevent form issues
         if (courses.length > 1) {
             setCourses(courses.filter((course)=>course.id !== id));
         }
     };
-    const calculateGPA = ()=>{
+    const calculateGPA = (e)=>{
+        e.preventDefault(); // Critical: stops the form from reloading the page
         const validCourses = courses.filter((course)=>course.grade && course.credits > 0);
         if (validCourses.length === 0) {
             alert("Please add at least one course with a grade and credits");
@@ -77,9 +80,11 @@ function Page() {
             totalCredits += course.credits;
         }
         const calculatedGPA = totalGradePoints / totalCredits;
-        setGpa(parseFloat(calculatedGPA.toFixed(2)));
+        // Set state correctly and round to 2 decimals
+        setGpa(Math.round(calculatedGPA * 100) / 100);
     };
-    const resetCalculator = ()=>{
+    const resetCalculator = (e)=>{
+        e.preventDefault();
         setCourses([
             {
                 id: "1",
@@ -98,15 +103,15 @@ function Page() {
                 children: "GPA Calculator"
             }, void 0, false, {
                 fileName: "[project]/app/gpa-calculator/page.tsx",
-                lineNumber: 79,
+                lineNumber: 85,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "mb-8 text-center text-lg",
+                className: "mb-8 text-center text-lg text-gray-600",
                 children: "Calculate your GPA using the University of Jordan grading scale."
             }, void 0, false, {
                 fileName: "[project]/app/gpa-calculator/page.tsx",
-                lineNumber: 80,
+                lineNumber: 86,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -117,7 +122,7 @@ function Page() {
                         children: "Grading Scale"
                     }, void 0, false, {
                         fileName: "[project]/app/gpa-calculator/page.tsx",
-                        lineNumber: 84,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -126,13 +131,14 @@ function Page() {
                                 className: "flex gap-1.5",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-gray-600",
                                         children: [
                                             grade,
                                             ":"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/gpa-calculator/page.tsx",
-                                        lineNumber: 88,
+                                        lineNumber: 95,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -140,67 +146,68 @@ function Page() {
                                         children: point.toFixed(2)
                                     }, void 0, false, {
                                         fileName: "[project]/app/gpa-calculator/page.tsx",
-                                        lineNumber: 89,
+                                        lineNumber: 96,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, grade, true, {
                                 fileName: "[project]/app/gpa-calculator/page.tsx",
-                                lineNumber: 87,
+                                lineNumber: 94,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/gpa-calculator/page.tsx",
-                        lineNumber: 85,
+                        lineNumber: 92,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/gpa-calculator/page.tsx",
-                lineNumber: 83,
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full max-w-2xl border p-6 rounded-lg shadow-md",
+                className: "w-full max-w-2xl border p-6 rounded-lg shadow-md bg-white",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                     className: "space-y-4",
                     children: [
-                        courses.map((course, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "border p-4 rounded-lg bg-white",
+                        courses.map((course)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "border p-4 rounded-lg bg-gray-50",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "grid grid-cols-1 md:grid-cols-4 gap-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "md:col-span-1",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "block mb-1 font-medium text-sm",
+                                                    className: "block mb-1 font-medium text-xs uppercase tracking-wider text-gray-500",
                                                     children: "Course Name"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/gpa-calculator/page.tsx",
-                                                    lineNumber: 102,
+                                                    lineNumber: 108,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                     type: "text",
-                                                    className: "w-full border rounded px-3 py-2 text-sm",
+                                                    className: "w-full border rounded px-3 py-2 text-sm focus:ring-1 focus:ring-blue-500 outline-none",
                                                     placeholder: "e.g., Calculus 1",
                                                     value: course.name,
                                                     onChange: (e)=>handleCourseChange(course.id, "name", e.target.value)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/gpa-calculator/page.tsx",
-                                                    lineNumber: 105,
+                                                    lineNumber: 111,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/gpa-calculator/page.tsx",
-                                            lineNumber: 101,
+                                            lineNumber: 107,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "block mb-1 font-medium text-sm",
+                                                    className: "block mb-1 font-medium text-xs uppercase tracking-wider text-gray-500",
                                                     children: [
                                                         "Grade ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -208,17 +215,17 @@ function Page() {
                                                             children: "*"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/gpa-calculator/page.tsx",
-                                                            lineNumber: 117,
+                                                            lineNumber: 123,
                                                             columnNumber: 27
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/gpa-calculator/page.tsx",
-                                                    lineNumber: 116,
+                                                    lineNumber: 122,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                                    className: "w-full border rounded px-3 py-2 text-sm",
+                                                    className: "w-full border rounded px-3 py-2 text-sm bg-white",
                                                     value: course.grade,
                                                     onChange: (e)=>handleCourseChange(course.id, "grade", e.target.value),
                                                     children: Object.keys(GRADE_SCALE).map((grade)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -226,24 +233,24 @@ function Page() {
                                                             children: grade
                                                         }, grade, false, {
                                                             fileName: "[project]/app/gpa-calculator/page.tsx",
-                                                            lineNumber: 127,
+                                                            lineNumber: 133,
                                                             columnNumber: 23
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/gpa-calculator/page.tsx",
-                                                    lineNumber: 119,
+                                                    lineNumber: 125,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/gpa-calculator/page.tsx",
-                                            lineNumber: 115,
+                                            lineNumber: 121,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "block mb-1 font-medium text-sm",
+                                                    className: "block mb-1 font-medium text-xs uppercase tracking-wider text-gray-500",
                                                     children: [
                                                         "Credits ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -251,13 +258,13 @@ function Page() {
                                                             children: "*"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/gpa-calculator/page.tsx",
-                                                            lineNumber: 135,
+                                                            lineNumber: 141,
                                                             columnNumber: 29
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/gpa-calculator/page.tsx",
-                                                    lineNumber: 134,
+                                                    lineNumber: 140,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -270,141 +277,144 @@ function Page() {
                                                     onChange: (e)=>handleCourseChange(course.id, "credits", parseInt(e.target.value) || 0)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/gpa-calculator/page.tsx",
-                                                    lineNumber: 137,
+                                                    lineNumber: 143,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/gpa-calculator/page.tsx",
-                                            lineNumber: 133,
+                                            lineNumber: 139,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center",
+                                            className: "flex items-end",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 type: "button",
-                                                className: "w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded text-sm",
-                                                onClick: ()=>removeCourse(course.id),
+                                                className: "w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded text-sm transition-colors disabled:opacity-50",
+                                                onClick: (e)=>removeCourse(course.id, e),
                                                 disabled: courses.length === 1,
                                                 children: "Remove"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/gpa-calculator/page.tsx",
-                                                lineNumber: 154,
+                                                lineNumber: 160,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/gpa-calculator/page.tsx",
-                                            lineNumber: 153,
+                                            lineNumber: 159,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/gpa-calculator/page.tsx",
-                                    lineNumber: 100,
+                                    lineNumber: 106,
                                     columnNumber: 15
                                 }, this)
                             }, course.id, false, {
                                 fileName: "[project]/app/gpa-calculator/page.tsx",
-                                lineNumber: 99,
+                                lineNumber: 105,
                                 columnNumber: 13
                             }, this)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex gap-2",
+                            className: "flex gap-4 pt-4",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
                                     className: "flex-1",
-                                    onClick: addCourse,
+                                    onClick: (e)=>addCourse(e),
                                     children: "+ Add Course"
                                 }, void 0, false, {
                                     fileName: "[project]/app/gpa-calculator/page.tsx",
-                                    lineNumber: 168,
+                                    lineNumber: 174,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
                                     className: "flex-1",
-                                    onClick: calculateGPA,
+                                    onClick: (e)=>calculateGPA(e),
                                     children: "Calculate GPA"
                                 }, void 0, false, {
                                     fileName: "[project]/app/gpa-calculator/page.tsx",
-                                    lineNumber: 174,
+                                    lineNumber: 181,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/gpa-calculator/page.tsx",
-                            lineNumber: 167,
+                            lineNumber: 173,
                             columnNumber: 11
                         }, this),
                         gpa !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mt-6 p-4 bg-blue-50 border-2 border-blue-200 rounded-lg",
+                            className: "mt-8 p-6 bg-blue-50 border-2 border-blue-200 rounded-xl transition-all animate-in fade-in zoom-in duration-300",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-center",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm text-gray-600 mb-2",
-                                            children: "Your GPA"
+                                            className: "text-sm font-medium text-blue-800 mb-1",
+                                            children: "Your Calculated GPA"
                                         }, void 0, false, {
                                             fileName: "[project]/app/gpa-calculator/page.tsx",
-                                            lineNumber: 185,
+                                            lineNumber: 193,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-4xl font-bold text-blue-600",
-                                            children: gpa
+                                            className: "text-5xl font-black text-blue-700",
+                                            children: gpa.toFixed(2)
                                         }, void 0, false, {
                                             fileName: "[project]/app/gpa-calculator/page.tsx",
-                                            lineNumber: 186,
+                                            lineNumber: 194,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xs text-gray-500 mt-2",
+                                            className: "text-xs text-blue-600 mt-3 font-medium",
                                             children: [
                                                 "Based on ",
                                                 courses.filter((c)=>c.grade && c.credits > 0).length,
-                                                " course(s)"
+                                                " valid course(s)"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/gpa-calculator/page.tsx",
-                                            lineNumber: 187,
+                                            lineNumber: 195,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/gpa-calculator/page.tsx",
-                                    lineNumber: 184,
+                                    lineNumber: 192,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: "w-full mt-4",
-                                    onClick: resetCalculator,
+                                    type: "button",
+                                    className: "w-full mt-6 py-2",
+                                    onClick: (e)=>resetCalculator(e),
                                     children: "Reset Calculator"
                                 }, void 0, false, {
                                     fileName: "[project]/app/gpa-calculator/page.tsx",
-                                    lineNumber: 191,
+                                    lineNumber: 199,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/gpa-calculator/page.tsx",
-                            lineNumber: 183,
+                            lineNumber: 191,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/gpa-calculator/page.tsx",
-                    lineNumber: 97,
+                    lineNumber: 103,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/gpa-calculator/page.tsx",
-                lineNumber: 95,
+                lineNumber: 102,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/gpa-calculator/page.tsx",
-        lineNumber: 78,
+        lineNumber: 84,
         columnNumber: 5
     }, this);
 }
