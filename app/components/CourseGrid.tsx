@@ -4,8 +4,8 @@ import SearchBar from "./SearchBar";
 export default function CourseGrid({ courses, majorName, searchDefaultValue }: CourseGridProps) {
     return (
         <>
-            <div className="flex w-full justify-between items-center gap-8 py-4 px-12">
-                <h1 className="text-2xl font-bold">{majorName || "Courses"}</h1>
+            <div className="flex flex-col-reverse md:flex-row w-full justify-between md:items-center gap-8 md:py-4 md:px-12 ">
+                <h1 className="text-2xl font-bold md:text-left text-center">{majorName || "Courses"}</h1>
                 <SearchBar defaultValue={searchDefaultValue} />
             </div>
 
