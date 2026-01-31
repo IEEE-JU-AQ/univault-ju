@@ -1,5 +1,4 @@
 import MajorsSidebar from "@/app/components/MajorsSidebar";
-import SearchBar from "@/app/components/SearchBar";
 
 export default function CoursesLayout({ children }: { children: React.ReactNode }) {
     return (

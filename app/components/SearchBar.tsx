@@ -1,11 +1,13 @@
-export default function SearchBar({ className }: { className?: string }) {
+export default function SearchBar({ defaultValue }: { defaultValue?: string }) {
     return (
-        <div className={`w-full max-w-md mx-auto ${className}`}>
-            <input
-                type="text"
-                placeholder="Search courses..."
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-        </div>
+            <form className="px-3 md:px-0 md:max-w-xl">
+                <input
+                    type="search"
+                    name="query"
+                    placeholder="Search courses..."
+                    defaultValue={defaultValue}
+                    className="w-full md:w-80 py-3 pl-5 pr-5 text-sm placeholder-gray-500 bg-white border border-[#606060] rounded-full focus:border-[#606060] focus:outline-none focus:ring-0 md:text-base"
+                />
+            </form>
     );
 }

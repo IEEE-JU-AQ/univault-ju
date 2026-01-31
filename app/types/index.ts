@@ -20,6 +20,8 @@ export type Faculty = {
 export type CourseGridProps = {
     courses: Course[];
     majorName?: string;
+    searchParams?: Promise<{ query?: string }>;
+    searchDefaultValue?: string;
 }
 
 export type CompletedCourse = {
@@ -40,3 +42,8 @@ export type Resource = ResourceCardProps & {
   id: string;
   category: "notes" | "exams" | "other";
 };
+
+export type MajorCoursesProps = {
+    params: Promise<{ majorId: string }>;
+    searchParams?: Promise<{ query?: string }>;
+}
