@@ -2,7 +2,7 @@ export type Course = {
   id: string;
   name: string;
   description: string;
-  code: string;
+  resourceCount: number;
 };
 
 export type Major = {
@@ -13,13 +13,15 @@ export type Major = {
 
 export type Faculty = {
   id: string;
-  faculty_name: string;
-  majors: Major[];
+  name: string;
+  majors: { id: string; name: string }[];
 };
 
 export type CourseGridProps = {
     courses: Course[];
     majorName?: string;
+    searchParams?: Promise<{ query?: string }>;
+    searchDefaultValue?: string;
 }
 
 export type CompletedCourse = {
@@ -29,7 +31,19 @@ export type CompletedCourse = {
   credits: number;
 };
 
-export type BreadCrumbsProps = {
-  courseId: string;
-  CourseName?: string;
+export type ResourceCardProps = {
+  id: string;
+  name: string;
+  stars: number;
+  uploadDate: Date;
+  uploader: string;
 };
+
+export type Resource = ResourceCardProps & {
+  category: "notes" | "exams" | "other";
+};
+
+export type MajorCoursesProps = {
+    params: Promise<{ majorId: string }>;
+    searchParams?: Promise<{ query?: string }>;
+}

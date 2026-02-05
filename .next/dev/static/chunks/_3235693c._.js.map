@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/xfxdedpanda/projects/univault/lib/supabase/client.ts"],"sourcesContent":["import { createBrowserClient } from \"@supabase/ssr\";\n\nexport function createClient() {\n  return createBrowserClient(\n    process.env.NEXT_PUBLIC_SUPABASE_URL!,\n    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!,\n  );\n}\n"],"names":[],"mappings":";;;;AAII;AAJJ;AAAA;;AAEO,SAAS;IACd,OAAO,IAAA,oMAAmB;AAI5B"}},
-    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///home/xfxdedpanda/projects/univault/components/auth-components/logout-button.tsx"],"sourcesContent":["\"use client\";\n\nimport { createClient } from \"@/lib/supabase/client\";\nimport { Button } from \"@/components/ui/button\";\nimport { useRouter } from \"next/navigation\";\n\nexport function LogoutButton() {\n  const router = useRouter();\n\n  const logout = async () => {\n    const supabase = createClient();\n    await supabase.auth.signOut();\n    router.push(\"/auth/login\");\n  };\n\n  return <Button onClick={logout}>Logout</Button>;\n}\n"],"names":[],"mappings":";;;;;AAEA;;;;;;AAEA;;;AAJA;;;;AAMO,SAAS;;IACd,MAAM,SAAS,IAAA,kJAAS;IAExB,MAAM,SAAS;QACb,MAAM,WAAW,IAAA,4IAAY;QAC7B,MAAM,SAAS,IAAI,CAAC,OAAO;QAC3B,OAAO,IAAI,CAAC;IACd;IAEA,qBAAO,6LAAC;QAAO,SAAS;kBAAQ;;;;;;AAClC;GAVgB;;QACC,kJAAS;;;KADV"}}]
-}

@@ -31,18 +31,22 @@ export default function Page() {
     );
   };
 
-  const addCourse = () => {
+  const addCourse = (e: React.MouseEvent) => {
+    e.preventDefault(); // Extra safety to prevent form issues
     const newId = Date.now().toString();
     setCourses([...courses, { id: newId, name: "", grade: "A", credits: 3 }]);
   };
 
-  const removeCourse = (id: string) => {
+  const removeCourse = (id: string, e: React.MouseEvent) => {
+    e.preventDefault(); // Extra safety to prevent form issues
     if (courses.length > 1) {
       setCourses(courses.filter((course) => course.id !== id));
     }
   };
 
-  const calculateGPA = () => {
+  const calculateGPA = (e: React.MouseEvent) => {
+    e.preventDefault(); // Critical: stops the form from reloading the page
+
     const validCourses = courses.filter(
       (course) => course.grade && course.credits > 0
     );
@@ -66,10 +70,12 @@ export default function Page() {
     }
 
     const calculatedGPA = totalGradePoints / totalCredits;
-    setGpa(parseFloat(calculatedGPA.toFixed(2)));
+    // Set state correctly and round to 2 decimals
+    setGpa(Math.round(calculatedGPA * 100) / 100);
   };
 
-  const resetCalculator = () => {
+  const resetCalculator = (e: React.MouseEvent) => {
+    e.preventDefault();
     setCourses([{ id: "1", name: "", grade: "A", credits: 3 }]);
     setGpa(null);
   };
@@ -77,34 +83,34 @@ export default function Page() {
   return (
     <div className="flex min-h-svh w-full flex-col items-center p-6 md:p-10 gap-10">
       <h1 className="mb-4 text-3xl font-bold">GPA Calculator</h1>
-      <p className="mb-8 text-center text-lg">
+      <p className="mb-8 text-center text-lg text-gray-600">
         Calculate your GPA using the University of Jordan grading scale.
       </p>
+
       <div className="mb-6">
         <h2 className="text-lg font-semibold mb-3">Grading Scale</h2>
         <div className="grid grid-cols-3 gap-2 text-sm bg-gray-50 p-3 rounded w-70">
           {Object.entries(GRADE_SCALE).map(([grade, point]) => (
             <div key={grade} className="flex gap-1.5">
-              <span>{grade}:</span>
+              <span className="text-gray-600">{grade}:</span>
               <span className="font-medium">{point.toFixed(2)}</span>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="w-full max-w-2xl border p-6 rounded-lg shadow-md">
-
+      <div className="w-full max-w-2xl border p-6 rounded-lg shadow-md bg-white">
         <form className="space-y-4">
-          {courses.map((course, index) => (
-            <div key={course.id} className="border p-4 rounded-lg bg-white">
+          {courses.map((course) => (
+            <div key={course.id} className="border p-4 rounded-lg bg-gray-50">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <div>
-                  <label className="block mb-1 font-medium text-sm">
+                <div className="md:col-span-1">
+                  <label className="block mb-1 font-medium text-xs uppercase tracking-wider text-gray-500">
                     Course Name
                   </label>
                   <input
                     type="text"
-                    className="w-full border rounded px-3 py-2 text-sm"
+                    className="w-full border rounded px-3 py-2 text-sm focus:ring-1 focus:ring-blue-500 outline-none"
                     placeholder="e.g., Calculus 1"
                     value={course.name}
                     onChange={(e) =>
@@ -113,11 +119,11 @@ export default function Page() {
                   />
                 </div>
                 <div>
-                  <label className="block mb-1 font-medium text-sm">
+                  <label className="block mb-1 font-medium text-xs uppercase tracking-wider text-gray-500">
                     Grade <span className="text-red-600">*</span>
                   </label>
                   <select
-                    className="w-full border rounded px-3 py-2 text-sm"
+                    className="w-full border rounded px-3 py-2 text-sm bg-white"
                     value={course.grade}
                     onChange={(e) =>
                       handleCourseChange(course.id, "grade", e.target.value)
@@ -131,7 +137,7 @@ export default function Page() {
                   </select>
                 </div>
                 <div>
-                  <label className="block mb-1 font-medium text-sm">
+                  <label className="block mb-1 font-medium text-xs uppercase tracking-wider text-gray-500">
                     Credits <span className="text-red-600">*</span>
                   </label>
                   <input
@@ -150,11 +156,11 @@ export default function Page() {
                     }
                   />
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-end">
                   <button
-                    type="button"
-                    className="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded text-sm"
-                    onClick={() => removeCourse(course.id)}
+                    type="button" // Important: stops reload
+                    className="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded text-sm transition-colors disabled:opacity-50"
+                    onClick={(e) => removeCourse(course.id, e)}
                     disabled={courses.length === 1}
                   >
                     Remove
@@ -164,33 +170,36 @@ export default function Page() {
             </div>
           ))}
 
-          <div className="flex gap-2">
+          <div className="flex gap-4 pt-4">
             <button
+              type="button" // Important: stops reload
               className="flex-1"
-              onClick={addCourse}
+              onClick={(e) => addCourse(e)}
             >
               + Add Course
             </button>
             <button
+              type="button" // Important: stops reload
               className="flex-1"
-              onClick={calculateGPA}
+              onClick={(e) => calculateGPA(e)}
             >
               Calculate GPA
             </button>
           </div>
 
           {gpa !== null && (
-            <div className="mt-6 p-4 bg-blue-50 border-2 border-blue-200 rounded-lg">
+            <div className="mt-8 p-6 bg-blue-50 border-2 border-blue-200 rounded-xl transition-all animate-in fade-in zoom-in duration-300">
               <div className="text-center">
-                <p className="text-sm text-gray-600 mb-2">Your GPA</p>
-                <p className="text-4xl font-bold text-blue-600">{gpa}</p>
-                <p className="text-xs text-gray-500 mt-2">
-                  Based on {courses.filter((c) => c.grade && c.credits > 0).length} course(s)
+                <p className="text-sm font-medium text-blue-800 mb-1">Your Calculated GPA</p>
+                <p className="text-5xl font-black text-blue-700">{gpa.toFixed(2)}</p>
+                <p className="text-xs text-blue-600 mt-3 font-medium">
+                  Based on {courses.filter((c) => c.grade && c.credits > 0).length} valid course(s)
                 </p>
               </div>
               <button
-                className="w-full mt-4"
-                onClick={resetCalculator}
+                type="button" // Important: stops reload
+                className="w-full mt-6 py-2"
+                onClick={(e) => resetCalculator(e)}
               >
                 Reset Calculator
               </button>

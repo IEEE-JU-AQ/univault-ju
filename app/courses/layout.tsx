@@ -1,10 +1,12 @@
 import MajorsSidebar from "@/app/components/MajorsSidebar";
-import SearchBar from "@/app/components/SearchBar";
+import { fetchFaculties } from "@/lib/utils/CourseUtils";
 
-export default function CoursesLayout({ children }: { children: React.ReactNode }) {
+export default async function CoursesLayout({ children }: { children: React.ReactNode }) {
+    const faculties = await fetchFaculties();
+
     return (
         <main className="flex min-h-screen ml-70">
-            <MajorsSidebar />
+            <MajorsSidebar faculties={faculties} />
             <div className="flex flex-col flex-1 mt-5">
                 {children}
             </div>

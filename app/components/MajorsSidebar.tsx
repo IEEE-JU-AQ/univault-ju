@@ -2,25 +2,20 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import faculties from "@/app/data/faculties.json";
+import type { Faculty } from "@/app/types";
 
-export default function MajorsSidebar() {
-  const [expandedFaculties, setExpandedFaculties] = useState<Set<string>>(new Set());
+export default function MajorsSidebar({ faculties }: { faculties: Faculty[] }) {
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
 
-  const toggleFaculty = (facultyId: string) => {
-    setExpandedFaculties((prev) => {
-      const newSet = new Set(prev);
-      if (newSet.has(facultyId)) {
-        newSet.delete(facultyId);
-      } else {
-        newSet.add(facultyId);
-      }
-      return newSet;
-    });
+  const toggle = (id: string) => {
+    const next = new Set(expandedIds);
+    if (next.has(id)) next.delete(id);
+    else next.add(id);
+    setExpandedIds(next);
   };
 
   return (
-    <div className="fixed left-0 top-15 w-70 border-r border-border p-6 overflow-y-auto h-full bg-card bg-white">
+    <nav className="fixed left-0 top-15 w-70 border-r border-border p-6 pb-17 overflow-y-auto h-full bg-layoutBackground dark:bg-layout-background">
       <h2 className="text-xl font-bold mb-6">Faculties & Majors</h2>
 
       {/* All Courses Link */}
@@ -39,16 +34,16 @@ export default function MajorsSidebar() {
       {faculties.map((faculty) => (
         <div key={faculty.id} className="mb-4">
           <button
-            onClick={() => toggleFaculty(faculty.id)}
+            onClick={() => toggle(faculty.id)}
             className="flex items-center w-full px-3 py-2 rounded-lg font-semibold text-left hover:bg-muted transition-colors duration-200"
           >
             <span className="mr-2 text-xs text-accent">
-              {expandedFaculties.has(faculty.id) ? "▼" : "▶"}
+              {expandedIds.has(faculty.id) ? "▼" : "▶"}
             </span>
-            {faculty.faculty_name}
+            {faculty.name}
           </button>
 
-          {expandedFaculties.has(faculty.id) && (
+          {expandedIds.has(faculty.id) && (
             <ul className="space-y-1 ml-6 mt-1 py-1 border-l border-border">
               {faculty.majors.map((major) => (
                 <li key={major.id}>
@@ -64,6 +59,6 @@ export default function MajorsSidebar() {
           )}
         </div>
       ))}
-    </div>
+    </nav>
   );
 }

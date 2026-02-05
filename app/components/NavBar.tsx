@@ -1,9 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import ThemeToggle from "./ThemeToggle";
 
 export default function NavBar() {
     return (
-        <nav className="w-full border-b border-b-foreground/10 sticky top-0 bg-white z-50">
+        <nav className="w-full border-b border-b-foreground/10 sticky top-0 z-50 bg-layout-background dark:bg-layout-background">
             <div className="max-w flex justify-between items-center py-4 px-10">
                 <Link href="/" className="no-underline">
                     <div className="flex gap-1">
@@ -17,6 +20,7 @@ export default function NavBar() {
                             <li className="list-none border-b-3 border-indigo-400 pb-1">GPA Calculator</li>
                         </ul>
                     </Link>
+                    <ThemeToggle />
                 </div>
             </div>
         </nav>

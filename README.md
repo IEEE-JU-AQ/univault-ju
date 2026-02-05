@@ -39,7 +39,7 @@ Official platforms like Moodle (eLearning) are limited to faculty-to-student con
 ## 👥 Development & Support
 **Developer:** [Zaid Qtaish](https://zaidqtaish.github.io)
 
-- **IEEE Student Branch:** Supported and and built by the IEEE community at JU Aqaba to encourage collaborative engineering.
+- **IEEE Student Branch:** Supported and built by the IEEE community at JU Aqaba to encourage collaborative engineering.
 - **JOSA** Developed as part of [JOSA](https://josa.ngo/) OpenLab to promote open-source culture in Jordan.
 
 *Open-Source & Student-Led*

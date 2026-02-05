@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///home/xfxdedpanda/projects/univault/app/courses/course/%5BcourseId%5D/page.tsx"],"sourcesContent":["import BreadCrumbs from \"@/components/Breadcrumbs\";\n\nexport default async function CoursePage({ params }: { params: Promise<{ courseId: string }> }) {\n    const { courseId } = await params;\n\n    return (\n        <div className=\"p-8\">\n\n            <h1 className=\"text-3xl font-bold mb-4\">Course ID: {courseId}</h1>\n            <p className=\"text-lg text-muted-foreground\">\n                This is the page for course with ID: {courseId}. More details and resources will be added here.\n            </p>\n        </div>\n    );\n}"],"names":[],"mappings":";;;;;;AAEe,eAAe,WAAW,EAAE,MAAM,EAA6C;IAC1F,MAAM,EAAE,QAAQ,EAAE,GAAG,MAAM;IAE3B,qBACI,8OAAC;QAAI,WAAU;;0BAEX,8OAAC;gBAAG,WAAU;;oBAA0B;oBAAY;;;;;;;0BACpD,8OAAC;gBAAE,WAAU;;oBAAgC;oBACH;oBAAS;;;;;;;;;;;;;AAI/D"}}]
-}

@@ -1,1 +1,13 @@
-node_modules
+# Next.js
+.next/
+out/
+build/
+
+# Production
+dist/
+
+# Env files (NEVER commit your Supabase keys if they are secret)
+.env*.local
+
+# Node
+node_modules/

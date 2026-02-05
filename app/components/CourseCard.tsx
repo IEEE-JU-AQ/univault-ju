@@ -3,15 +3,15 @@ import Link from "next/link";
 
 export default function CourseCard({ course }: { course: Course }) {
   return (
-    <div className="border border-border rounded-xl bg-white p-4 bg-card text-card-foreground shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex flex-col justify-between h-full">
+    <div className="border border-border rounded-xl p-4 text-card-foreground shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex flex-col justify-between h-full">
       <div>
         {/* Course Header: Category Badge */}
         <div className="flex justify-between items-start">
-          <span className="text-[10px] uppercase tracking-wider font-bold text-accent bg-accent/10 px-2.5 py-1 rounded-md">
-            {course.code || "CIS-101"}
+          <span className="text-[10px] uppercase tracking-wider font-bold text-accent bg-accent/10 px-1 pt-1.5 rounded-md">
+            {course.id || ""}
           </span>
           <span className="text-muted-foreground hover:text-primary transition-colors cursor-help">
-            <span className="text-xs">📄 12 Files</span>
+            <span className="text-xs">📄 {course.resourceCount} Files</span>
           </span>
         </div>
 
@@ -27,7 +27,7 @@ export default function CourseCard({ course }: { course: Course }) {
       </div>
 
       {/* Action Button - Uses your refined Secondary color */}
-      <button className="w-full mt-6 py-2.5 px-4 rounded-l font-semibold transition-all duration-200 flex items-center justify-center gap-2">
+      <button className="w-full mt-6 py-2.5 px-4 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2">
         <Link className="w-full h-full" href={`/courses/course/${course.id}`}>View Resources</Link>
         <span className="text-lg">→</span>
       </button>

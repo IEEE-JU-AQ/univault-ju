@@ -3,9 +3,12 @@
 @layer base {
   :root {
     --background: #F1F5F9;
+    --layout-background: #FFFFFF;
     --foreground: #0F172A;
     --card: #FFFFFF;
     --card-foreground: #0F172A;
+    --popover: #FFFFFF;
+    --popover-foreground: #0F172A;
     --primary: #4F46E5;
     --primary-foreground: #FFFFFF;
     --secondary: #E0E7FF;
@@ -14,17 +17,27 @@
     --muted-foreground: #64748B;
     --accent: #F59E0B;
     --accent-foreground: #FFFFFF;
+    --destructive: #EF4444;
+    --destructive-foreground: #FFFFFF;
     --border: #E2E8F0;
     --input: #E2E8F0;
     --ring: #4F46E5;
     --radius: 0.5rem;
+    --chart-1: #4F46E5;
+    --chart-2: #7C3AED;
+    --chart-3: #EC4899;
+    --chart-4: #F59E0B;
+    --chart-5: #10B981;
   }
 
   .dark {
-    --background: #0F172A;
+    --background: #060911;
+    --layout-background: #000000;
     --foreground: #F1F5F9;
     --card: #1E293B;
     --card-foreground: #F1F5F9;
+    --popover: #1E293B;
+    --popover-foreground: #F1F5F9;
     --primary: #6366F1;
     --primary-foreground: #FFFFFF;
     --secondary: #1E1B4B;
@@ -33,9 +46,16 @@
     --muted-foreground: #94A3B8;
     --accent: #F59E0B;
     --accent-foreground: #0F172A;
+    --destructive: #F87171;
+    --destructive-foreground: #0F172A;
     --border: #334155;
     --input: #334155;
     --ring: #6366F1;
+    --chart-1: #818CF8;
+    --chart-2: #A78BFA;
+    --chart-3: #F472B6;
+    --chart-4: #FBBF24;
+    --chart-5: #34D399;
   }
 }
 
@@ -48,10 +68,14 @@
   }
 
   body {
-    background-color: var(--background);
     color: var(--foreground);
+    background-color: var(--background);
     font-family: inherit;
     line-height: 1.5;
+  }
+
+  main {
+    background-color: var(--background);
   }
 }
 
@@ -64,12 +88,17 @@
     color: var(--primary-foreground);
     font-weight: 500;
     border: 1px solid var(--border);
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
     opacity: 75%;
   }
 
   button:hover {
     opacity: 0.9;
+  }
+
+  nav {
+    background-color: var(--layout-background);
+    color: var(--foreground);
   }
 
   input,
