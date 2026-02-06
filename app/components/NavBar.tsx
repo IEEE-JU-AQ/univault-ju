@@ -17,7 +17,7 @@ export default function NavBar() {
                 <div className="flex gap-20 items-center">
                     <Link href="/gpa-calculator">
                         <ul>
-                            <li className="list-none border-b-3 border-indigo-400 pb-1">GPA Calculator</li>
+                            <li className="list-none border-b-3 border-[var(--primary)] pb-1">GPA Calculator</li>
                         </ul>
                     </Link>
                     <ThemeToggle />

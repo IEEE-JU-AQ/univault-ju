@@ -9,7 +9,7 @@
     --card-foreground: #0F172A;
     --popover: #FFFFFF;
     --popover-foreground: #0F172A;
-    --primary: #4F46E5;
+    --primary: #4F46E5BF;
     --primary-foreground: #FFFFFF;
     --secondary: #E0E7FF;
     --secondary-foreground: #4338CA;
@@ -32,13 +32,13 @@
 
   .dark {
     --background: #060911;
-    --layout-background: #000000;
+    --layout-background: #0e1525;
     --foreground: #F1F5F9;
-    --card: #1E293B;
+    --card: #0e1525;
     --card-foreground: #F1F5F9;
     --popover: #1E293B;
     --popover-foreground: #F1F5F9;
-    --primary: #6366F1;
+    --primary: #2c80e0;
     --primary-foreground: #FFFFFF;
     --secondary: #1E1B4B;
     --secondary-foreground: #C7D2FE;
@@ -68,8 +68,8 @@
   }
 
   body {
+    background-color: var(--layout-background);
     color: var(--foreground);
-    background-color: var(--background);
     font-family: inherit;
     line-height: 1.5;
   }
@@ -88,8 +88,7 @@
     color: var(--primary-foreground);
     font-weight: 500;
     border: 1px solid var(--border);
-    transition: opacity 0.1s ease-in-out;
-    opacity: 75%;
+    transition: opacity 0.1s ease-in-out; 
   }
 
   button:hover {
@@ -98,7 +97,10 @@
 
   nav {
     background-color: var(--layout-background);
-    color: var(--foreground);
+  }
+
+  footer {
+    background-color: var(--layout-background);
   }
 
   input,

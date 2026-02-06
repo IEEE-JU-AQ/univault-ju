@@ -15,7 +15,7 @@ export default function MajorsSidebar({ faculties }: { faculties: Faculty[] }) {
   };
 
   return (
-    <nav className="fixed left-0 top-15 w-70 border-r border-border p-6 pb-17 overflow-y-auto h-full bg-layoutBackground dark:bg-layout-background">
+    <nav className="fixed left-0 top-15 w-70 border-r border-border p-6 py-16 pb-17 overflow-y-auto h-full z-10">
       <h2 className="text-xl font-bold mb-6">Faculties & Majors</h2>
 
       {/* All Courses Link */}

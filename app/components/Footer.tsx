@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="border-t border-border bg-white py-8 px-8 mt-20">
+        <footer className="border-t border-border py-8 px-8">
             <div className="ml-75 flex flex-col md:flex-row justify-between items-center">
 
                 {/* Left: Branding */}
@@ -16,7 +16,7 @@ export default function Footer() {
 
                 {/* Right: Socials */}
                 <div className="flex gap-4">
-                    <a href="https://github.com/IEEE-JU-AQ/univault-ju" className="text-indigo-800 hover:text-indigo-500 transition-colors"><i className="fa-brands fa-github text-4xl"></i></a>
+                    <a href="https://github.com/IEEE-JU-AQ/univault-ju" className="text-[var(--foreground)] hover:text-[var(--primary)] transition-colors"><i className="fa-brands fa-github text-4xl"></i></a>
                 </div>
 
             </div>

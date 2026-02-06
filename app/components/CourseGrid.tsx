@@ -3,8 +3,8 @@ import type { CourseGridProps } from "@/app/types";
 import SearchBar from "./SearchBar";
 export default function CourseGrid({ courses, majorName, searchDefaultValue }: CourseGridProps) {
     return (
-        <>
-            <div className="flex flex-col-reverse md:flex-row w-full justify-between md:items-center gap-8 md:py-4 md:px-12 ">
+        <main className="pb-10">
+            <div className="flex flex-col-reverse md:flex-row w-full justify-between md:items-center gap-8 md:py-4 md:px-12">
                 <h1 className="text-2xl font-bold md:text-left text-center">{majorName || "Courses"}</h1>
                 <SearchBar defaultValue={searchDefaultValue} />
             </div>
@@ -14,6 +14,6 @@ export default function CourseGrid({ courses, majorName, searchDefaultValue }: C
                     <CourseCard key={course.id} course={course} />
                 ))}
             </div>
-        </>
+        </main>
     )
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CourseCard({ course }: { course: Course }) {
   return (
-    <div className="border border-border rounded-xl p-4 text-card-foreground shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex flex-col justify-between h-full">
+    <div className="border border-border rounded-xl p-4 bg-[var(--card)] text-[var(--card-foreground)] shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex flex-col justify-between h-full">
       <div>
         {/* Course Header: Category Badge */}
         <div className="flex justify-between items-start">

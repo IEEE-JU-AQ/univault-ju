@@ -81,7 +81,7 @@ export default function Page() {
   };
 
   return (
-    <div className="flex min-h-svh w-full flex-col items-center p-6 md:p-10 gap-10">
+    <main className="flex min-h-svh w-full flex-col items-center p-6 md:p-10 gap-10">
       <h1 className="mb-4 text-3xl font-bold">GPA Calculator</h1>
       <p className="mb-8 text-center text-lg text-gray-600">
         Calculate your GPA using the University of Jordan grading scale.
@@ -91,8 +91,8 @@ export default function Page() {
         <h2 className="text-lg font-semibold mb-3">Grading Scale</h2>
         <div className="grid grid-cols-3 gap-2 text-sm bg-gray-50 p-3 rounded w-70">
           {Object.entries(GRADE_SCALE).map(([grade, point]) => (
-            <div key={grade} className="flex gap-1.5">
-              <span className="text-gray-600">{grade}:</span>
+            <div key={grade} className="flex gap-1.5 text-gray-600">
+              <span>{grade}:</span>
               <span className="font-medium">{point.toFixed(2)}</span>
             </div>
           ))}
@@ -207,6 +207,6 @@ export default function Page() {
           )}
         </form>
       </div>
-    </div>
+    </main>
   );
 }

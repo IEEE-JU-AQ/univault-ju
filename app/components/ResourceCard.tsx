@@ -3,7 +3,7 @@ import type { ResourceCardProps } from "@/app/types";
 
 export default function ResourceCard({ name, stars, uploadDate, uploader }: ResourceCardProps) {
     return (
-        <div className="border border-border rounded-xl bg-white p-4 bg-card text-card-foreground shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex flex-col justify-between h-full">
+        <div className="border border-border rounded-xl p-4 card bg-[var(--card)] text-[var(--card-foreground)] shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex flex-col justify-between h-full">
             <div>
                 <div className="flex justify-between items-start mt-2 mb-3">
                     <h2 className="text-xl font-bold group-hover:text-primary transition-colors leading-tight">

@@ -8,7 +8,7 @@ export default function SearchBar({ defaultValue }: { defaultValue?: string }) {
                     name="query"
                     placeholder="Search courses..."
                     defaultValue={defaultValue}
-                    className="w-full md:w-80 py-3 pl-5 pr-5 text-sm placeholder-gray-500 bg-white border border-[#606060] rounded-full focus:border-[#606060] focus:outline-none focus:ring-0 md:text-base"
+                    className="w-full md:w-80 py-3 pl-5 pr-5 bg-[var(--layout-background)] placeholder:text-[var(--muted-foreground)] text-sm placeholder-gray-500 border border-[#606060] rounded-full focus:border-[#606060] focus:outline-none focus:ring-0 md:text-base"
                 />
             </Form>
     );

@@ -1,15 +1,10 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";
+import type { Theme } from "@/app/types";
+import type { ThemeContext } from "@/app/types";
 
-type Theme = "light" | "dark";
-
-interface ThemeContextType {
-  theme: Theme;
-  toggleTheme: () => void;
-}
-
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+const ThemeContext = createContext<ThemeContext | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>("light");
@@ -40,11 +35,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
 
-  // Prevent hydration mismatch by not rendering until mounted
-  if (!mounted) {
-    return <>{children}</>;
-  }
-
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
@@ -52,7 +42,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function useTheme() {
+export function useTheme() {  
   const context = useContext(ThemeContext);
   if (context === undefined) {
     throw new Error("useTheme must be used within ThemeProvider");

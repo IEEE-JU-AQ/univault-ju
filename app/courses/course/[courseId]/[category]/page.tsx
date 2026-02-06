@@ -6,7 +6,7 @@ const { category, courseId } = await params;
 const resources = await fetchResourcesByCourse(courseId);
 
   return (
-    <div className="p-6">
+    <main className="p-6 pb-10">
       <h1 className="capitalize text-xl font-bold mb-3 mt-4">
         {category.replace('-', ' ')}
       </h1>
@@ -18,6 +18,6 @@ const resources = await fetchResourcesByCourse(courseId);
             <ResourceCard key={resource.id} {...resource} />
           ))}
       </div>
-    </div>
+    </main>
   );
 }

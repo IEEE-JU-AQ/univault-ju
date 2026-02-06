@@ -47,3 +47,10 @@ export type MajorCoursesProps = {
     params: Promise<{ majorId: string }>;
     searchParams?: Promise<{ query?: string }>;
 }
+
+export type Theme = "light" | "dark";
+
+export type ThemeContext = {
+  theme: Theme;
+  toggleTheme: () => void;
+}

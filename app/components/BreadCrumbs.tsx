@@ -9,7 +9,7 @@ export default function BreadCrumbs({ CourseName }: { CourseName?: string }) {
     const category = params.category as string;
 
     return (
-        <nav className="flex flex-wrap items-center gap-2 text-sm text-gray-500 mb-6 font-medium">
+        <div className="flex flex-wrap items-center gap-2 text-sm text-gray-500 mb-6 font-medium">
             <Link href="/courses" className="hover:text-primary transition-colors">
                 Courses
             </Link>
@@ -28,6 +28,6 @@ export default function BreadCrumbs({ CourseName }: { CourseName?: string }) {
                     </span>
                 </>
             )}
-        </nav>
+        </div>
     );
 }
