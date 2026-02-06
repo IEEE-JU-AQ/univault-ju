@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -13,9 +14,6 @@ export default function ThemeToggle() {
   if (!mounted) {
     return <div className="p-2 rounded-lg w-10 h-10" />;
   }
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { theme, toggleTheme } = useTheme();
 
   return (
     <button
