@@ -6,7 +6,7 @@
 Official platforms like Moodle (eLearning) are limited to faculty-to-student content. UniVault fills the **Missing Link** by providing a permanent home for student-to-student sharing, replacing fragmented Telegram bots and WhatsApp groups.
 
 ## ✨ Key Features
-- **The Course Vault:** Structured UI by Faculty (IT, Marine Science, etc.) for Past Papers, Summaries, and Lab Samples.
+- **The Course Vault:** Structured UI by Faculty (IT, Marine Science, etc.) for Past Papers, Summaries, and Other Material.
 - **GPA Calculator:** Localized tool calibrated for the JU 4.0 grading system.
 - ~~**Interactive Quizzes:** Peer-to-peer mock exams to test knowledge before midterms/finals.~~
 - ~~**Major Tree Syllabus:** Interactive visual map of core courses and their prerequisites.~~
