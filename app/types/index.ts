@@ -54,3 +54,8 @@ export type ThemeContext = {
   theme: Theme;
   toggleTheme: () => void;
 }
+
+export type UploadFormProps = {
+    faculties: Faculty[];
+    courses: Course[];
+}
