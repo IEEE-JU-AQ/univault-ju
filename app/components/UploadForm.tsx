@@ -6,14 +6,14 @@ import { useState } from "react";
 export default function UploadForm({ majors, courses }: UploadFormProps) {
     const [selectedMajorId, setSelectedMajorId] = useState<string | null>(null);
 
-    const filteredCourses = courses.filter(course => 
-        course.majorIds?.includes(selectedMajorId || "")
-    );
+    const filteredCourses = selectedMajorId 
+    ? courses.filter(course => course.majorIds?.includes(selectedMajorId)) 
+    : courses;
     return (
             <form className="w-full max-w-md bg-[var(--card)] p-6 rounded-xl shadow-sm">
                 <div className="mb-4">
                     <label htmlFor="major" className="block text-sm font-medium mb-1">Major</label>
-                    <select id="major" name="major" className="w-full border border-border rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[var(--primary)]" required onChange={(e) => setSelectedMajorId(e.target.value)}>
+                    <select id="major" name="major" className="w-full border border-border rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[var(--primary)]" onChange={(e) => setSelectedMajorId(e.target.value)}>
                         <option value="">Select a major</option>
                         {majors.map((major) => (
                             <option key={major.id} value={major.id}>
