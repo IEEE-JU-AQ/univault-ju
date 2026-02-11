@@ -3,8 +3,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
+import { usePathname } from "next/navigation";
 
 export default function NavBar() {
+    const pathname = usePathname();
     return (
         <nav className="w-full border-b border-b-foreground/10 sticky top-0 z-50 bg-layout-background dark:bg-layout-background">
             <div className="max-w flex justify-between items-center py-4 px-10">
@@ -17,7 +19,7 @@ export default function NavBar() {
                 <div className="flex gap-20 items-center">
                     <Link href="/gpa-calculator">
                         <ul>
-                            <li className="list-none border-b-3 border-[var(--primary)] pb-1">GPA Calculator</li>
+                            <li className={`font-medium tracking-wide border-b-1 border-[var(--primary)] transition-all pb-1 rounded ${pathname == "/gpa-calculator" ? "border-b-4" : ""}`}>GPA Calculator</li>
                         </ul>
                     </Link>
                     <ThemeToggle />
