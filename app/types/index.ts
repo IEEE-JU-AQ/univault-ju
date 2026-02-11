@@ -3,12 +3,12 @@ export type Course = {
   name: string;
   description: string;
   resourceCount: number;
+  majorIds: string[];
 };
 
 export type Major = {
   id: string;
   name: string;
-  courses: Course[];
 };
 
 export type Faculty = {
@@ -56,6 +56,6 @@ export type ThemeContext = {
 }
 
 export type UploadFormProps = {
-    faculties: Faculty[];
+    majors: Major[];
     courses: Course[];
 }

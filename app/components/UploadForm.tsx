@@ -1,20 +1,23 @@
 'use client';
 
 import type { UploadFormProps } from "@/app/types";
+import { useState } from "react";
 
-export default function UploadForm({ faculties, courses }: UploadFormProps) {
+export default function UploadForm({ majors, courses }: UploadFormProps) {
+    const [selectedMajorId, setSelectedMajorId] = useState<string | null>(null);
+
+    const filteredCourses = courses.filter(course => 
+        course.majorIds?.includes(selectedMajorId || "")
+    );
     return (
-        <main className="flex flex-col items-center gap-10 mt-10">
-            <h1 className="text-4xl font-bold">Upload Course Material</h1>
-            <p className="text-lg mb-10">Share your notes, past papers, and other resources with the community!</p>
             <form className="w-full max-w-md bg-[var(--card)] p-6 rounded-xl shadow-sm">
                 <div className="mb-4">
-                    <label htmlFor="faculty" className="block text-sm font-medium mb-1">Faculty</label>
-                    <select id="faculty" name="faculty" className="w-full border border-border rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[var(--primary)]" required>
-                        <option value="">Select a faculty</option>
-                        {faculties.map((faculty) => (
-                            <option key={faculty.id} value={faculty.id}>
-                                {faculty.name}
+                    <label htmlFor="major" className="block text-sm font-medium mb-1">Major</label>
+                    <select id="major" name="major" className="w-full border border-border rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[var(--primary)]" required onChange={(e) => setSelectedMajorId(e.target.value)}>
+                        <option value="">Select a major</option>
+                        {majors.map((major) => (
+                            <option key={major.id} value={major.id}>
+                                {major.name}
                             </option>
                         ))}
                     </select>
@@ -23,7 +26,7 @@ export default function UploadForm({ faculties, courses }: UploadFormProps) {
                     <label htmlFor="courseId" className="block text-sm font-medium mb-1">Course</label>
                     <select id="course" name="courseid" className="w-full border border-border rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[var(--primary)]" required>
                         <option value="">Select a course</option>
-                        {courses.map((course) => (
+                        {filteredCourses.map((course) => (
                             <option key={course.id} value={course.id}>
                                 {course.name}
                             </option>
@@ -44,7 +47,6 @@ export default function UploadForm({ faculties, courses }: UploadFormProps) {
                     <input type="file" id="file" name="file" className="w-full border border-border rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[var(--primary)]" required />
                 </div>
                 <button type="submit" className="w-full bg-primary text-white py-2 rounded-md hover:bg-primary/90 transition-colors">Upload</button>
-            </form>
-        </main>        
+            </form>     
     );
 } 

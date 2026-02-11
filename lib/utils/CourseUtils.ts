@@ -1,47 +1,43 @@
 import { supabase } from "@/lib/supabase";
 
 export async function fetchCourses(majorId?: string) {
+    const selectQuery = `
+        *,
+        resources(count),
+        major_course (
+            major_id
+        )
+    `;
+
     if (majorId) {
-        // 1. Get courses for a major + count their resources
         const { data, error } = await supabase
             .from('major_course')
-            .select(`
-                courses:courses (
-                    *,
-                    resources(count)
-                ) 
-            `)
+            .select(`courses (${selectQuery})`)
             .eq('major_id', majorId);
 
-        if (error) {
-            console.error("Supabase Error:", error);
-            return [];
-        }
+        if (error) return [];
 
         return data?.map(item => {
             const course = Array.isArray(item.courses) ? item.courses[0] : item.courses;
             return {
                 ...course,
+                // Now it includes which major(s) it belongs to
+                majorIds: course.major_course?.map((mc: any) => mc.major_id) || [],
                 resourceCount: course.resources?.[0]?.count || 0
             };
         }) || [];
     }
 
-    // 2. Get all courses + count their resources
+    // 2. Updated "Get All" logic
     const { data, error } = await supabase
         .from('courses')
-        .select(`
-            *,
-            resources(count)
-        `);
+        .select(selectQuery);
 
-    if (error) {
-        console.error("Supabase Error:", error);
-        return [];
-    }
+    if (error) return [];
 
     return data.map(course => ({
         ...course,
+        majorIds: course.major_course?.map((mc: any) => mc.major_id) || [],
         resourceCount: course.resources?.[0]?.count || 0
     })) || [];
 }
