@@ -5,8 +5,6 @@ export default async function UploadPage() {
     const faculties = await fetchFaculties();
     const allMajors = faculties.flatMap(faculty => faculty.majors);
     const courses = await fetchCourses();
-    console.log(allMajors);
-
     return (
         <main className="flex flex-col items-center gap-10 mt-10">
             <h1 className="text-4xl font-bold">Upload Course Material</h1>
