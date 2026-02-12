@@ -9,8 +9,8 @@ export default function ResourceCard({ name, stars, uploadDate, uploader }: Reso
                     <h2 className="text-xl font-bold group-hover:text-primary transition-colors leading-tight">
                         {name}
                     </h2>
-                    <div className="flex gap-1 items-center">
-                        <p className="text-sm text-gray-500">{stars}</p>
+                    <div className="flex gap-1 items-center ml-2">
+                        <p className="text-sm opacity-80">{stars}</p>
                         <Star className="text-yellow-400 cursor-pointer" size={25} />
                     </div>
                 </div>
