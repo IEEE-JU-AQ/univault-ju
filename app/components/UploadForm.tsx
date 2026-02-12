@@ -14,10 +14,11 @@ export default function UploadForm({ majors, courses }: UploadFormProps) {
 
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        const form = e.currentTarget;
         try {
-            await uploadResource(new FormData(e.currentTarget));
+            await uploadResource(new FormData(form));
             alert("Upload successful!");
-            e.currentTarget.reset();
+            form.reset();
         } catch (err: any) {
             alert(err.message);
         }
