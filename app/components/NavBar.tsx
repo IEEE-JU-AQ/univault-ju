@@ -19,7 +19,7 @@ export default function NavBar() {
                 <div className="flex gap-20 items-center">
                     <Link href="/gpa-calculator">
                         <ul>
-                            <li className={`font-medium tracking-wide border-b-1 border-[var(--primary)] transition-all pb-1 rounded ${pathname == "/gpa-calculator" ? "border-b-4" : ""}`}>GPA Calculator</li>
+                            <li className={`font-medium tracking-wide border-b-1 border-[var(--primary)] transition-all pb-1 ${pathname == "/gpa-calculator" ? "border-b-4" : ""}`}>GPA Calculator</li>
                         </ul>
                     </Link>
                     <ThemeToggle />

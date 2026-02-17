@@ -1,7 +1,14 @@
+'use client';
+
 import { Download, Star, Eye } from "lucide-react";
 import type { ResourceCardProps } from "@/app/types";
+import { downloadResource } from "@/lib/utils/DownloadResource";
 
-export default function ResourceCard({ name, stars, uploadDate, uploader }: ResourceCardProps) {
+export default function ResourceCard({ name, stars, uploadDate, uploader, id }: ResourceCardProps) {
+    const onDownloadClick = async () => {
+        const url = await downloadResource(id);
+        window.open(url, '_blank');
+    };
     return (
         <div className="border border-border rounded-xl p-4 card bg-[var(--card)] text-[var(--card-foreground)] shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex flex-col justify-between h-full">
             <div>
@@ -25,7 +32,7 @@ export default function ResourceCard({ name, stars, uploadDate, uploader }: Reso
                 <button className="w-full mt-6 py-2.5 px-4 rounded-lg font-semibold flex items-center justify-center">
                     <Eye className="mb-1" size={20} />
                 </button>
-                <button className="w-full mt-6 py-2.5 px-4 rounded-lg font-semibold flex items-center justify-center">
+                <button className="w-full mt-6 py-2.5 px-4 rounded-lg font-semibold flex items-center justify-center" onClick={onDownloadClick}>
                     <Download className="mb-1" size={20} />
                 </button>
             </div>
