@@ -11,19 +11,28 @@ export default function CourseGrid({ courses, majorName, searchDefaultValue }: C
                 <SearchBar defaultValue={searchDefaultValue} />
             </div>
 
+            {courses.length === 0 && (
+                <div className="flex flex-col items-center gap-4 mt-10">
+                    <p className="text-lg text-muted-foreground">No courses found.</p>
+                </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 p-6 md:p-10 md:pt-5">
                 {courses.map(course => (
                     <CourseCard key={course.id} course={course} />
                 ))}
             </div>
-            <div className="flex w-full justify-center">
-                <Link href={`/courses/upload`}>
-                    <button className="flex flex-col items-center px-15 py-15 rounded-xl gap-5 w-100">
-                        <Upload size={30} />
-                        <p className="text-lg font-bold">Upload Material</p>
-                    </button>
-                </Link>
-            </div>
+            
+            {courses.length > 0 && (
+                <div className="flex w-full justify-center">
+                    <Link href={`/courses/upload`}>
+                        <button className="flex flex-col items-center px-15 py-10 rounded-xl gap-5 w-100">
+                            <Upload size={30} />
+                            <p className="text-lg font-bold">Upload Material</p>
+                        </button>
+                    </Link>
+                </div>
+            )}
         </main>
     )
 }
