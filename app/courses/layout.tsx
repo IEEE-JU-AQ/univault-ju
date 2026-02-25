@@ -5,7 +5,7 @@ export default async function CoursesLayout({ children }: { children: React.Reac
     const faculties = await fetchFaculties();
 
     return (
-        <main className="flex min-h-screen ml-70">
+        <main className="flex min-h-screen md:ml-70">
             <MajorsSidebar faculties={faculties} />
             <div className="flex flex-col flex-1 mt-5">
                 {children}
