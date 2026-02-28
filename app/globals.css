@@ -108,7 +108,8 @@
   }
 
   input,
-  textarea {
+  textarea,
+  select {
     padding: 8px;
     border-radius: var(--radius);
     background-color: var(--card);
@@ -117,8 +118,14 @@
     font-family: inherit;
   }
 
+  select option {
+    background-color: var(--card);
+    color: var(--foreground);
+  }
+
   input:focus,
-  textarea:focus {
+  textarea:focus,
+  select:focus {
     outline: none;
     border-color: var(--ring);
     box-shadow: 0 0 0 2px var(--border);
