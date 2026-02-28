@@ -67,6 +67,10 @@
     border-color: var(--border);
   }
 
+  html, body {
+    overflow-x: hidden;
+  }
+
   body {
     background-color: var(--layout-background);
     color: var(--foreground);

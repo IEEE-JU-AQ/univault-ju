@@ -26,7 +26,7 @@ export default function CourseGrid({ courses, majorName, searchDefaultValue }: C
             {courses.length > 0 && (
                 <div className="flex w-full justify-center">
                     <Link href={`/courses/upload`}>
-                        <button className="flex flex-col items-center px-15 py-10 rounded-xl gap-5 w-100">
+                        <button className="flex flex-col items-center px-15 py-10 rounded-xl gap-5 w-full max-w-100">
                             <Upload size={30} />
                             <p className="text-lg font-bold">Upload Material</p>
                         </button>
