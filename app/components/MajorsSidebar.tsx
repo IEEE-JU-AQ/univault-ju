@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { Faculty } from "@/app/types";
+import { Menu, X } from "lucide-react";
 
 export default function MajorsSidebar({ faculties }: { faculties: Faculty[] }) {
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
@@ -40,17 +41,9 @@ export default function MajorsSidebar({ faculties }: { faculties: Faculty[] }) {
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle sidebar"
-        className="fixed top-18 left-4 z-50 md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-lg bg-background border border-border shadow-md"
+        className="fixed top-20 left-2 z-50 md:hidden flex justify-center items-center w-12 h-12 rounded-lg bg-background border border-border shadow-md transition-colors duration-200 hover:bg-muted"
       >
-        <span
-          className={`block w-5 h-0.5 bg-foreground transition-all duration-300 ${isOpen ? "rotate-45 translate-y-1" : ""}`}
-        />
-        <span
-          className={`block w-5 h-0.5 bg-foreground mt-1 transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}
-        />
-        <span
-          className={`block w-5 h-0.5 bg-foreground mt-1 transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}
-        />
+        {isOpen ? <X className="w-9 h-9" /> : <Menu className="w-9 h-9" />}
       </button>
 
       {/* Overlay — mobile only */}
