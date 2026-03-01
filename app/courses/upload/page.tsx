@@ -1,7 +1,9 @@
 import { fetchCourses, fetchFaculties } from "@/lib/utils/CourseUtils";
 import UploadForm from "@/app/components/UploadForm";
+import { connection } from "next/server";
 
 export default async function UploadPage() {
+    await connection();
     const faculties = await fetchFaculties();
     const allMajors = faculties.flatMap(faculty => faculty.majors);
     const courses = await fetchCourses();

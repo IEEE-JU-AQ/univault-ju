@@ -1,7 +1,9 @@
 import MajorsSidebar from "@/app/components/MajorsSidebar";
 import { fetchFaculties } from "@/lib/utils/CourseUtils";
+import { connection } from "next/server";
 
 export default async function CoursesLayout({ children }: { children: React.ReactNode }) {
+    await connection();
     const faculties = await fetchFaculties();
 
     return (

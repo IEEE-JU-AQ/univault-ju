@@ -1,7 +1,9 @@
 import BreadCrumbs from "@/app/components/BreadCrumbs";
 import { fetchCourseById } from "@/lib/utils/CourseUtils";
+import { connection } from "next/server";
 
 export default async function CoursePageLayout({ params, children }: { params: Promise<{ courseId: string }>, children: React.ReactNode }) {
+    await connection();
     const { courseId } = await params;
     const course = await fetchCourseById(courseId);
 

@@ -1,8 +1,10 @@
 import { fetchCourses, fetchMajorById } from "@/lib/utils/CourseUtils";
 import CourseGrid from "@/app/components/CourseGrid";
 import type { MajorCoursesProps } from "@/app/types";
+import { connection } from "next/server";
 
 export default async function majorCoursesPage({ params, searchParams }: MajorCoursesProps) {
+    await connection();
     const { majorId } = await params;
     const courses = await fetchCourses(majorId);
     const major = await fetchMajorById(majorId);

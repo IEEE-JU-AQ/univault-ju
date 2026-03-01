@@ -1,7 +1,9 @@
 import ResourceCard from "@/app/components/ResourceCard";
 import { fetchResourcesByCourse } from "@/lib/utils/CourseUtils";
+import { connection } from "next/server";
 
 export default async function ResourceCategoryPage({ params }: { params: Promise<{ courseId: string; category: string }> }) {
+await connection();
 const { category, courseId } = await params;
 const resources = await fetchResourcesByCourse(courseId);
 
