@@ -81,7 +81,8 @@ export default function Page() {
   };
 
   return (
-    <main className="flex min-h-svh w-full flex-col items-center p-6 md:p-10 gap-10">
+    <body className="pt-17">
+    <main className="flex min-h-svh w-full flex-col items-center p-6 pt-17 md:p-10 gap-10">
       <h1 className="mb-4 text-3xl font-bold">GPA Calculator</h1>
       <p className="mb-8 text-center text-lg">
         Calculate your GPA using the University of Jordan grading scale.
@@ -208,5 +209,6 @@ export default function Page() {
         </form>
       </div>
     </main>
+    </body>
   );
 }

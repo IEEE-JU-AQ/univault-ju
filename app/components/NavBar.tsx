@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 export default function NavBar() {
     const pathname = usePathname();
     return (
-        <nav className="w-full border-b border-b-foreground/10 sticky top-0 z-50 bg-layout-background dark:bg-layout-background">
+        <nav className="w-full border-b border-b-foreground/10 fixed top-0 z-50 bg-layout-background dark:bg-layout-background">
             <div className="max-w flex justify-between items-center py-4 px-4 sm:px-10">
                 <Link href="/" className="no-underline">
                     <div className="flex gap-1">
