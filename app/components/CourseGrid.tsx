@@ -1,8 +1,6 @@
 import CourseCard from "./CourseCard";
-import Link from "next/link";
 import type { CourseGridProps } from "@/app/types";
 import SearchBar from "./SearchBar";
-import { Upload } from "lucide-react";
 export default function CourseGrid({ courses, majorName, searchDefaultValue }: CourseGridProps) {
     return (
         <main className="pb-10">
@@ -22,17 +20,6 @@ export default function CourseGrid({ courses, majorName, searchDefaultValue }: C
                     <CourseCard key={course.id} course={course} />
                 ))}
             </div>
-            
-            {courses.length > 0 && (
-                <div className="flex w-full justify-center">
-                    <Link href={`/courses/upload`}>
-                        <button className="flex flex-col items-center px-15 py-10 rounded-xl gap-5 w-full max-w-100">
-                            <Upload size={30} />
-                            <p className="text-lg font-bold">Upload Material</p>
-                        </button>
-                    </Link>
-                </div>
-            )}
         </main>
     )
 }
