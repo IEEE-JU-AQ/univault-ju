@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { Faculty } from "@/app/types";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, ChevronRight, Menu, X } from "lucide-react";
 
 export default function MajorsSidebar({ faculties }: { faculties: Faculty[] }) {
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
@@ -82,8 +82,12 @@ export default function MajorsSidebar({ faculties }: { faculties: Faculty[] }) {
               onClick={() => toggle(faculty.id)}
               className="flex items-center w-full px-3 py-2 rounded-lg font-semibold text-left hover:bg-muted transition-colors duration-200"
             >
-              <span className="mr-2 text-xs text-accent">
-                {expandedIds.has(faculty.id) ? "▼" : "▶"}
+              <span className="mr-2 text-accent">
+                {expandedIds.has(faculty.id) ? (
+                  <ChevronDown className="w-4 h-4" aria-hidden />
+                ) : (
+                  <ChevronRight className="w-4 h-4" aria-hidden />
+                )}
               </span>
               {faculty.name}
             </button>
